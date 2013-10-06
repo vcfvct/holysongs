@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+          <!--android:layout_width="fill_parent"-->
+          <!--android:layout_height="fill_parent"-->
+          <!--android:padding="10dp"-->
+          <!--android:textSize="20sp" >-->
+
+<!--</TextView>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+        >
+    <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            />
+    <com.example.HolySongs.Sidebar
+            android:id="@+id/side_bar"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            />
+</RelativeLayout>
