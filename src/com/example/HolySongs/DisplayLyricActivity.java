@@ -24,6 +24,7 @@ public class DisplayLyricActivity extends Activity {
         textView.setMovementMethod(new ScrollingMovementMethod());
         textView.setTextSize(20);
         textView.setText(message);
+        textView.setLineSpacing(50, 1.0f);
 
         // Set the text view as the activity layout
         setContentView(textView);

@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager.LayoutParams;
@@ -14,13 +16,20 @@ import android.view.WindowManager;
 import android.widget.*;
 import com.example.HolySongs.helpers.ChineseCharComp;
 import com.example.HolySongs.helpers.HanziHelper;
+import com.example.HolySongs.helpers.XMLParser;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.*;
 import java.util.*;
 
 public class MainActivity extends ListActivity implements AbsListView.OnScrollListener{
@@ -63,12 +72,11 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        String myData = getJsonFromAsset("songs.json");
-        setData(myData);
+        XMLParser parser = new XMLParser();
+        String myData = getXml("songs.xml");
+        setDataFromXML(parser, myData);
         final List<String> titleList = new ArrayList<String>(songLyricMap.keySet());
         Collections.sort(titleList, new ChineseCharComp());
-//        String[] titles = titleList.toArray(new String[songLyricMap.size()]);
-//        setListAdapter(new ArrayAdapter<String>(this, R.layout.main, titles));
 
         ListView listView = getListView();
         listView.setTextFilterEnabled(true);
@@ -95,54 +103,35 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         startActivity(intent);
     }
 
-    private String getJsonFromAsset(String fileName) {
-        StringBuffer sb = new StringBuffer();
-        BufferedReader br = null;
+    private String getXml(String path){
+
+        String xmlString = null;
         try {
-            br = new BufferedReader(new InputStreamReader(getAssets().open(fileName)));
-            String temp;
-            while ((temp = br.readLine()) != null)
-                sb.append(temp);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                br.close(); // stop reading
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            InputStream is = getAssets().open(path);
+            int length = is.available();
+            byte[] data = new byte[length];
+            is.read(data);
+            xmlString = new String(data);
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
 
-        return sb.toString();
+        return xmlString==null? null : xmlString.replaceAll(" ", "");
     }
 
-    private void setData(String jsonString) {
-        try {
-            // Creating JSONObject from String
-            JSONObject jsonObjMain = new JSONObject(jsonString);
-
-            // Creating JSONArray from JSONObject
-            JSONArray jsonArray = jsonObjMain.getJSONArray("songs");
-
-            // JSONArray has four JSONObject
-            for (int i = 0; i < jsonArray.length(); i++) {
-
-                // Creating JSONObject from JSONArray
-                JSONObject jsonObj = jsonArray.getJSONObject(i);
-
-                // Getting data from individual JSONObject
-                String name = jsonObj.getString("name");
-                String lyric = jsonObj.getString("lyric");
-                if (lyric != null) {
-                    lyric = lyric.replaceAll("!!LineBreak!!", System.getProperty("line.separator"));
-                }
-                songLyricMap.put(name, lyric);
-            }
-
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+    private void setDataFromXML(XMLParser parser, String xml) {
+        Document doc = parser.getDomElement(xml);
+        NodeList nl = doc.getElementsByTagName("song");
+        // looping through all item nodes <item>
+        for (int i = 0; i < nl.getLength(); i++) {
+            // creating new HashMap
+            Element e = (Element) nl.item(i);
+            // adding each child node to HashMap key => value
+            String name = parser.getValue(e, "name");
+            String lyric = parser.getValue(e, "lyric");
+            songLyricMap.put(name, lyric);
         }
+
     }
 
     private void setupIndicator() {
