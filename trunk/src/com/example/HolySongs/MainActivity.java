@@ -1,38 +1,26 @@
 package com.example.HolySongs;
 
-import android.app.Activity;
+import android.app.ActionBar;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
+import android.view.*;
 import android.view.WindowManager.LayoutParams;
-import android.view.WindowManager;
 import android.widget.*;
 import com.example.HolySongs.helpers.ChineseCharComp;
 import com.example.HolySongs.helpers.HanziHelper;
 import com.example.HolySongs.helpers.XMLParser;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.util.*;
 
-public class MainActivity extends ListActivity implements AbsListView.OnScrollListener{
+public class MainActivity extends ListActivity implements AbsListView.OnScrollListener {
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
     }
@@ -40,22 +28,24 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     @Override
     public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
         if (mReady) {
-            char firstLetter = (HanziHelper.words2Pinyin((String)getListView().getItemAtPosition(firstVisibleItem))).charAt(0);
+            char firstLetter = (HanziHelper.words2Pinyin((String) getListView().getItemAtPosition(firstVisibleItem))).charAt(0);
             if (!mShowing && firstLetter != mPrevLetter) {
                 mShowing = true;
                 mDialogText.setVisibility(View.VISIBLE);
             }
-            mDialogText.setText(((Character)firstLetter).toString().toUpperCase());
+            mDialogText.setText(((Character) firstLetter).toString().toUpperCase());
             mHandler.removeCallbacks(mRemoveWindow);
             mHandler.postDelayed(mRemoveWindow, 2000);
             mPrevLetter = firstLetter;
-        }    }
+        }
+    }
 
     private final class RemoveWindow implements Runnable {
         public void run() {
             removeWindow();
         }
     }
+
     public final static String LYRIC = "com.goodtrendltd.LYRIC";
 
     private Map<String, String> songLyricMap = new HashMap<String, String>();
@@ -87,10 +77,8 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                String songName = ((TextView) view).getText().toString();
                 String songName = titleList.get(position);
                 navigateToLyric(songName);
-//                Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
             }
         });
         setupIndicator();
@@ -103,7 +91,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         startActivity(intent);
     }
 
-    private String getXml(String path){
+    private String getXml(String path) {
 
         String xmlString = null;
         try {
@@ -116,7 +104,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
             e1.printStackTrace();
         }
 
-        return xmlString==null? null : xmlString.replaceAll(" ", "");
+        return xmlString == null ? null : xmlString.replaceAll(" ", "");
     }
 
     private void setDataFromXML(XMLParser parser, String xml) {
@@ -135,9 +123,9 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     }
 
     private void setupIndicator() {
-        mWindowManager = (WindowManager)getSystemService(Context.WINDOW_SERVICE);
+        mWindowManager = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         getListView().setOnScrollListener(this);
-        LayoutInflater inflate = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflate = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         mDialogText = (TextView) inflate.inflate(R.layout.list_position, null);
         mDialogText.setVisibility(View.INVISIBLE);
@@ -153,7 +141,8 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
                                 | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
                         PixelFormat.TRANSLUCENT);
                 mWindowManager.addView(mDialogText, lp);
-            }});
+            }
+        });
     }
 
     private void removeWindow() {
@@ -182,5 +171,30 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         super.onDestroy();
         mWindowManager.removeView(mDialogText);
         mReady = false;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.about:
+                openAbout();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openAbout() {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 }
