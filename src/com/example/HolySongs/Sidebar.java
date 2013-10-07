@@ -3,9 +3,12 @@ package com.example.HolySongs;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.util.AttributeSet;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.SectionIndexer;
 
@@ -21,7 +24,7 @@ public class Sidebar extends View {
 
     private SectionIndexer sectionIndexter;
     private ListView list;
-    private final int itemHeight = 36;
+    private int itemHeight = 22;
 
     public Sidebar(Context context) {
         super(context);
@@ -40,6 +43,13 @@ public class Sidebar extends View {
 
     private void init() {
         setBackgroundColor(0x44FFFFFF);
+        //get height by different screen resolution
+        WindowManager wm = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+        int height = size.y;
+        itemHeight = height/36;
     }
 
     public void bindListView(ListView list) {
