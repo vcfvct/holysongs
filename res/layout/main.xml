@@ -9,7 +9,7 @@
             android:layout_height="fill_parent"
             android:cacheColorHint="#00000000"
             />
-    <com.example.HolySongs.Sidebar
+    <com.goodtrendltd.HolySongs.Sidebar
             android:id="@+id/side_bar"
             android:layout_width="30dip"
             android:layout_height="fill_parent"
