@@ -46,6 +46,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     }
 
     public final static String LYRIC = "com.goodtrendltd.LYRIC";
+    public final static String SONG_NAME = "com.goodtrendltd.SONG_NAME";
 
     private Map<String, String> songLyricMap = new HashMap<String, String>();
 
@@ -87,6 +88,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         String lyric = songLyricMap.get(songName);
         Intent intent = new Intent(this, DisplayLyricActivity.class);
         intent.putExtra(LYRIC, lyric);
+        intent.putExtra(SONG_NAME, songName);
         startActivity(intent);
     }
 
