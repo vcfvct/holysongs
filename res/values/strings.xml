@@ -2,4 +2,18 @@
 <resources>
     <string name="app_name">敬拜赞美诗</string>
     <string name="about">关于App</string>
+    <string name="settings_text">设置</string>
+    <string name="font_size_prompt">选择字体大小 当前位: </string>
+    <string name="font_size_pref_key">fontSize</string>
+    <string name="font_size_resume_default">恢复默认</string>
+    <string-array name="font_size_array">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+    </string-array>
 </resources>

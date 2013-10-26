@@ -16,6 +16,11 @@
         <activity android:name=".DisplayLyricActivity"
                   android:label="歌词"
                   android:parentActivityName="MainActivity"/>
-        <activity android:name=".AboutActivity" android:label="关于"/>
+        <activity android:name=".AboutActivity"
+                  android:label="关于"
+                  android:parentActivityName="MainActivity"/>
+        <activity android:name=".SettingsActivity"
+                  android:label="选项设置"
+                  android:parentActivityName="MainActivity"/>
     </application>
 </manifest>
