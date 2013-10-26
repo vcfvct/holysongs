@@ -189,9 +189,17 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
             case R.id.about:
                 openAbout();
                 return true;
+            case R.id.settings:
+                openSettings();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void openSettings() {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     private void openAbout() {

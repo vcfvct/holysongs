@@ -2,8 +2,10 @@ package com.goodtrendltd.HolySongs;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.method.ScrollingMovementMethod;
 import android.widget.TextView;
 
@@ -18,6 +20,7 @@ public class DisplayLyricActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.lyric_view);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         Intent intent = getIntent();
         String lyric = intent.getStringExtra(MainActivity.LYRIC);
@@ -26,7 +29,7 @@ public class DisplayLyricActivity extends Activity {
         // Create the text view
         TextView lyricTextView = (TextView) findViewById(R.id.lyricContent);
         lyricTextView.setMovementMethod(new ScrollingMovementMethod());
-        lyricTextView.setTextSize(20);
+        lyricTextView.setTextSize(sharedPreferences.getInt(getString(R.string.font_size_pref_key),20));
         lyricTextView.setText(lyric);
         lyricTextView.setLineSpacing(20, 1.0f);
 
