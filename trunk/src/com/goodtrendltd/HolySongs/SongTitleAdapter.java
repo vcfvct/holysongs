@@ -1,7 +1,11 @@
 package com.goodtrendltd.HolySongs;
+
 import java.util.List;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.preference.PreferenceManager;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,22 +21,24 @@ import com.goodtrendltd.HolySongs.helpers.HanziHelper;
  * Date: 13-10-6
  * Time: 上午10:00
  */
-public class SongTitleAdapter extends ArrayAdapter<String> implements SectionIndexer{
+public class SongTitleAdapter extends ArrayAdapter<String> implements SectionIndexer {
     private SparseIntArray alphaMap;
     private List<String> items;
     private Context context;
+    private SharedPreferences sharedPreferences;
 
-    public SongTitleAdapter(Context context, List<String> items) {
+    public SongTitleAdapter(Context context, List<String> items, SharedPreferences sharedPreferences) {
         super(context, R.layout.song_item, items);
         this.alphaMap = new SparseIntArray(Sidebar.ALPHABET_ARRAY.length);
         this.items = items;
         this.context = context;
+        this.sharedPreferences = sharedPreferences;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
-        if(convertView == null) {
+        if (convertView == null) {
             viewHolder = new ViewHolder();
             convertView = LayoutInflater.from(context).inflate(R.layout.song_item, null);
             viewHolder.name = (TextView) convertView.findViewById(R.id.name);
@@ -42,6 +48,14 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
         }
         String p = items.get(position);
         viewHolder.name.setText(p);
+        if (!sharedPreferences.getBoolean(getContext().getString(R.string.night_mode_pref_key), true)) {
+            viewHolder.name.setTextColor(Color.parseColor("#000000"));
+//            convertView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+        }
+//        else {
+//            viewHolder.name.setTextColor(Color.parseColor("#FFFFFF"));
+//            convertView.setBackgroundColor(Color.parseColor("#000000"));
+//        }
         return convertView;
     }
 
@@ -66,7 +80,7 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
         int end = items.size();
         int pos;
         //if pos already exists
-        if((pos = alphaMap.get(key, Integer.MIN_VALUE)) != Integer.MIN_VALUE) {
+        if ((pos = alphaMap.get(key, Integer.MIN_VALUE)) != Integer.MIN_VALUE) {
             return pos;
         } else {
             //FIXME haven't considered non-alphabet characters
@@ -76,20 +90,20 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
             end = getApproximateEndPosOfLetter(items, section);
             start = getApproximateStartPosOfLetter(items, section - 1);
         }
-        while(start < end) {
+        while (start < end) {
             pos = (start + end) / 2;
             String curLetter = Character.toString(HanziHelper.words2Pinyin(items.get(pos)).charAt(0));
             int result = curLetter.compareToIgnoreCase(targetLetter);
-            if(result < 0) {
+            if (result < 0) {
                 start = pos + 1;
-            } else if(result > 0) {
+            } else if (result > 0) {
                 end = pos - 1;
-            } else if(result == 0) {
-                while(Character.toString(HanziHelper.words2Pinyin(items.get(pos)).charAt(0))
+            } else if (result == 0) {
+                while (Character.toString(HanziHelper.words2Pinyin(items.get(pos)).charAt(0))
                         .compareToIgnoreCase(targetLetter) == 0) {
-                    if(pos >= 1) {
+                    if (pos >= 1) {
                         pos--;
-                    } else if(pos == 0) {
+                    } else if (pos == 0) {
                         alphaMap.put(key, pos);
                         return pos;
                     }
@@ -121,13 +135,14 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
     }
 
     private int getApproximateStartPosOfLetter(List<String> source, int section) {
-        int result = -1;;
-        while(section >= 0) {
+        int result = -1;
+        ;
+        while (section >= 0) {
             result = getFirstAppearanceOfLetter(source, Sidebar.ALPHABET_ARRAY[section]);
-            if(result != -1) {
-                while(Sidebar.ALPHABET_ARRAY[section].equals(
+            if (result != -1) {
+                while (Sidebar.ALPHABET_ARRAY[section].equals(
                         Character.toString(HanziHelper.words2Pinyin(source.get(result)).charAt(0)))) {
-                    if(result < source.size() - 1) {
+                    if (result < source.size() - 1) {
                         result++;
                     } else {
                         return result;
@@ -142,13 +157,14 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
     }
 
     private int getApproximateEndPosOfLetter(List<String> source, int section) {
-        int result = -1;;
-        while(section < Sidebar.ALPHABET_ARRAY.length) {
+        int result = -1;
+        ;
+        while (section < Sidebar.ALPHABET_ARRAY.length) {
             result = getFirstAppearanceOfLetter(source, Sidebar.ALPHABET_ARRAY[section]);
-            if(result != -1) {
-                while(Sidebar.ALPHABET_ARRAY[section].equals(
+            if (result != -1) {
+                while (Sidebar.ALPHABET_ARRAY[section].equals(
                         Character.toString(HanziHelper.words2Pinyin(source.get(result)).charAt(0)))) {
-                    if(result >= 1) {
+                    if (result >= 1) {
                         result--;
                     } else {
                         return result;
@@ -166,15 +182,15 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
         int appearance = -1;
         int tmpStart = 0;
         int tmpEnd = source.size();
-        while(tmpStart < tmpEnd) {
+        while (tmpStart < tmpEnd) {
             int tmpPos = (tmpStart + tmpEnd) / 2;
             String curLetter = Character.toString(HanziHelper.words2Pinyin(source.get(tmpPos)).charAt(0));
             int result = curLetter.compareToIgnoreCase(targetLetter);
-            if(result < 0) {
+            if (result < 0) {
                 tmpStart = tmpPos + 1;
-            } else if(result > 0) {
+            } else if (result > 0) {
                 tmpEnd = tmpPos - 1;
-            } else if(result == 0) {
+            } else if (result == 0) {
                 appearance = tmpPos;
                 break;
             }
