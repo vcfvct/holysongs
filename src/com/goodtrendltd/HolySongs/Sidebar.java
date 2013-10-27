@@ -70,7 +70,7 @@ public class Sidebar extends View {
         switch(event.getAction()) {
             case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_MOVE:
-                setBackgroundColor(0x88000000);
+                setBackgroundColor(0x8844FFFF);
                 if (sectionIndexter == null) {
                     sectionIndexter = (SectionIndexer) list.getAdapter();
                 }

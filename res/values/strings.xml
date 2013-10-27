@@ -3,9 +3,15 @@
     <string name="app_name">敬拜赞美诗</string>
     <string name="about">关于App</string>
     <string name="settings_text">设置</string>
-    <string name="font_size_prompt">选择字体大小 当前位: </string>
+    <string name="app_pref">appPrefFile</string>
+
+    <string name="font_size_prompt">选择字体大小 当前为: </string>
     <string name="font_size_pref_key">fontSize</string>
     <string name="font_size_resume_default">恢复默认</string>
+
+    <string name="night_mode_label_text">夜间模式(黑色背景)</string>
+    <string name="night_mode_pref_key">nightMode</string>
+
     <string-array name="font_size_array">
         <item>16</item>
         <item>18</item>

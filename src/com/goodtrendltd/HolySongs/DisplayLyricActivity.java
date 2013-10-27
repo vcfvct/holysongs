@@ -19,8 +19,13 @@ public class DisplayLyricActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_pref), MODE_PRIVATE);
+        if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
+            setTheme(android.R.style.Theme_Holo);
+        } else {
+            setTheme(android.R.style.Theme_Holo_Light);
+        }
         setContentView(R.layout.lyric_view);
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         Intent intent = getIntent();
         String lyric = intent.getStringExtra(MainActivity.LYRIC);

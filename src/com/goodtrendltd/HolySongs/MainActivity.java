@@ -3,6 +3,7 @@ package com.goodtrendltd.HolySongs;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,30 +21,7 @@ import java.io.*;
 import java.util.*;
 
 public class MainActivity extends ListActivity implements AbsListView.OnScrollListener {
-    @Override
-    public void onScrollStateChanged(AbsListView view, int scrollState) {
-    }
 
-    @Override
-    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
-        if (mReady) {
-            char firstLetter = (HanziHelper.words2Pinyin((String) getListView().getItemAtPosition(firstVisibleItem))).charAt(0);
-            if (!mShowing && firstLetter != mPrevLetter) {
-                mShowing = true;
-                mDialogText.setVisibility(View.VISIBLE);
-            }
-            mDialogText.setText(((Character) firstLetter).toString().toUpperCase());
-            mHandler.removeCallbacks(mRemoveWindow);
-            mHandler.postDelayed(mRemoveWindow, 2000);
-            mPrevLetter = firstLetter;
-        }
-    }
-
-    private final class RemoveWindow implements Runnable {
-        public void run() {
-            removeWindow();
-        }
-    }
 
     public final static String LYRIC = "com.goodtrendltd.LYRIC";
     public final static String SONG_NAME = "com.goodtrendltd.SONG_NAME";
@@ -57,10 +35,18 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     private boolean mShowing;
     private boolean mReady;
     private char mPrevLetter = Character.MIN_VALUE;
+    private SharedPreferences sharedPreferences;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferences = getSharedPreferences(getString(R.string.app_pref), MODE_PRIVATE);
+        if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
+            setTheme(android.R.style.Theme_Holo);
+        } else {
+            setTheme(android.R.style.Theme_Holo_Light);
+        }
         setContentView(R.layout.main);
+
 
         XMLParser parser = new XMLParser();
         String myData = getXml("songs.xml");
@@ -70,7 +56,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
 
         ListView listView = getListView();
         listView.setTextFilterEnabled(true);
-        listView.setAdapter(new SongTitleAdapter(getApplicationContext(), titleList));
+        listView.setAdapter(new SongTitleAdapter(getApplicationContext(), titleList, sharedPreferences));
         Sidebar sb = (Sidebar) findViewById(R.id.side_bar);
         sb.bindListView(getListView());
 
@@ -154,6 +140,31 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     }
 
     @Override
+    public void onScrollStateChanged(AbsListView view, int scrollState) {
+    }
+
+    @Override
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+        if (mReady) {
+            char firstLetter = (HanziHelper.words2Pinyin((String) getListView().getItemAtPosition(firstVisibleItem))).charAt(0);
+            if (!mShowing && firstLetter != mPrevLetter) {
+                mShowing = true;
+                mDialogText.setVisibility(View.VISIBLE);
+            }
+            mDialogText.setText(((Character) firstLetter).toString().toUpperCase());
+            mHandler.removeCallbacks(mRemoveWindow);
+            mHandler.postDelayed(mRemoveWindow, 2000);
+            mPrevLetter = firstLetter;
+        }
+    }
+
+    private final class RemoveWindow implements Runnable {
+        public void run() {
+            removeWindow();
+        }
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         mReady = true;
@@ -174,6 +185,8 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
         mReady = false;
     }
 
+
+    //begin of menu related
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
