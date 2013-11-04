@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/youtube"
+          android:title="@string/youtube_menu"
+          android:showAsAction="never" />
+    <item android:id="@+id/youku"
+          android:title="@string/youku_menu"
+          android:showAsAction="never" />
+    <item android:id="@+id/tudou"
+          android:title="@string/tudou_menu"
+          android:showAsAction="never" />
+</menu>
