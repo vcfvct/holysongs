@@ -12,6 +12,20 @@
     <string name="night_mode_label_text">夜间模式(黑色背景)</string>
     <string name="night_mode_pref_key">nightMode</string>
 
+    <string name="youtube_menu">youtube搜索</string>
+    <string name="youku_menu">优酷搜索</string>
+    <string name="tudou_menu">土豆搜索</string>
+    <string name="youtube">youtube</string>
+    <string name="youku">youku</string>
+    <string name="tudou">tudou</string>
+    <string name="youtube_url">http://m.youtube.com/results?q=</string>
+    <string name="youku_url">http://www.soku.com/m/y/video?q=</string>
+    <string name="tudou_url">http://www.soku.com/m/t/video?q=</string>
+    <string name="alert_title">没有连接wifi</string>
+    <string name="alert_message">将使用手机流量，是否继续？</string>
+    <string name="ok_button">继续</string>
+    <string name="cancel_button">取消</string>
+
     <string-array name="font_size_array">
         <item>16</item>
         <item>18</item>
@@ -22,4 +36,16 @@
         <item>28</item>
         <item>30</item>
     </string-array>
+
+    <style name="MyHoloTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="MyHoloLightTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/video_icon</item>
+    </style>
 </resources>

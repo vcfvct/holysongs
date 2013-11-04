@@ -1,12 +1,21 @@
 package com.goodtrendltd.HolySongs;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.text.method.ScrollingMovementMethod;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 /**
@@ -16,25 +25,29 @@ import android.widget.TextView;
  * Time: 下午10:13
  */
 public class DisplayLyricActivity extends Activity {
+    public static String SEARCH_TARGET = "com.goodtrendltd.searchTarget";
+
+    private String songName;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_pref), MODE_PRIVATE);
         if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
-            setTheme(android.R.style.Theme_Holo);
+            setTheme(R.style.MyHoloTheme);
         } else {
-            setTheme(android.R.style.Theme_Holo_Light);
+            setTheme(R.style.MyHoloLightTheme);
         }
         setContentView(R.layout.lyric_view);
 
         Intent intent = getIntent();
         String lyric = intent.getStringExtra(MainActivity.LYRIC);
-        String songName = intent.getStringExtra(MainActivity.SONG_NAME);
+        songName = intent.getStringExtra(MainActivity.SONG_NAME);
 
         // Create the text view
         TextView lyricTextView = (TextView) findViewById(R.id.lyricContent);
         lyricTextView.setMovementMethod(new ScrollingMovementMethod());
-        lyricTextView.setTextSize(sharedPreferences.getInt(getString(R.string.font_size_pref_key),20));
+        lyricTextView.setTextSize(sharedPreferences.getInt(getString(R.string.font_size_pref_key), 20));
         lyricTextView.setText(lyric);
         lyricTextView.setLineSpacing(20, 1.0f);
 
@@ -43,5 +56,67 @@ public class DisplayLyricActivity extends Activity {
         titleTextView.setTextSize(25);
         titleTextView.setTextColor(Color.parseColor("#00BFFF"));
 
+    }
+
+    //begin of menu related
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.lyricview_actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.youtube:
+                openSearch(getString(R.string.youtube));
+                return true;
+            case R.id.youku:
+                openSearch(getString(R.string.youku));
+                return true;
+            case R.id.tudou:
+                openSearch(getString(R.string.tudou));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openSearch(final String target) {
+        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo.State wifi = manager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
+        if (wifi == NetworkInfo.State.CONNECTED || wifi == NetworkInfo.State.CONNECTING) {
+            navigateToSearch(target);
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(android.R.drawable.ic_dialog_alert);
+            builder.setTitle(R.string.alert_title);
+            builder.setMessage(R.string.alert_message);
+            builder.setPositiveButton(R.string.ok_button, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    // 如果没有网络连接，则进入网络设置界面
+                    navigateToSearch(target);
+                }
+            });
+            builder.setNegativeButton(R.string.cancel_button, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            builder.create();
+            builder.show();
+        }
+    }
+
+    private void navigateToSearch(String target){
+        Intent intent = new Intent(this, VideoSearch.class);
+        intent.putExtra(SEARCH_TARGET, target);
+        intent.putExtra(MainActivity.SONG_NAME, songName);
+        startActivity(intent);
     }
 }
