@@ -1,12 +1,14 @@
 package com.goodtrendltd.HolySongs;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -20,6 +22,7 @@ public class VideoSearch extends Activity {
     private String target;
     private String songName;
     private WebView webView;
+    private ProgressDialog pd;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,13 +35,28 @@ public class VideoSearch extends Activity {
 
         webView = (WebView) findViewById(R.id.searchWebView);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient(){
-             @Override
-             public boolean shouldOverrideUrlLoading(WebView webview, String url)
-             {
-                 webview.setWebChromeClient(new WebChromeClient());
-                 return false;
-             }
+        webView.getSettings().setPluginState(WebSettings.PluginState.ON_DEMAND);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView webview, String url) {
+                webview.setWebChromeClient(new WebChromeClient());
+                return false;
+            }
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                if (pd == null || !pd.isShowing()) {
+                    pd = ProgressDialog.show(VideoSearch.this, "", "努力加载中...", true);
+                    pd.setCancelable(true);
+                }
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                if (pd.isShowing()) {
+                    pd.dismiss();
+                }
+            }
         });
         webView.loadUrl(getSearchUrl());
     }
@@ -57,10 +75,8 @@ public class VideoSearch extends Activity {
 
     //override this to make sure video stops playing after use hit back button.
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if ((keyCode == KeyEvent.KEYCODE_BACK) && webView.canGoBack())
-        {
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK) && webView.canGoBack()) {
             webView.goBack();
             return true;
         }
