@@ -21,44 +21,25 @@ import android.webkit.WebViewClient;
 public class VideoSearch extends Activity {
     private String target;
     private String songName;
-    private WebView webView;
+//    private WebView webView;
+    private HTML5WebView webView;
     private ProgressDialog pd;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.video_webview);
-
         Intent intent = getIntent();
         target = intent.getStringExtra(DisplayLyricActivity.SEARCH_TARGET);
         songName = intent.getStringExtra(MainActivity.SONG_NAME);
 
-        webView = (WebView) findViewById(R.id.searchWebView);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setPluginState(WebSettings.PluginState.ON_DEMAND);
-        webView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView webview, String url) {
-                webview.setWebChromeClient(new WebChromeClient());
-                return false;
-            }
+        webView = new HTML5WebView(this);
 
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                if (pd == null || !pd.isShowing()) {
-                    pd = ProgressDialog.show(VideoSearch.this, "", "努力加载中...", true);
-                    pd.setCancelable(true);
-                }
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                if (pd.isShowing()) {
-                    pd.dismiss();
-                }
-            }
-        });
-        webView.loadUrl(getSearchUrl());
+        if (savedInstanceState != null) {
+            webView.restoreState(savedInstanceState);
+        } else {
+            webView.loadUrl(getSearchUrl());
+        }
+        setContentView(webView.getLayout());
     }
 
     private String getSearchUrl() {
@@ -89,6 +70,12 @@ public class VideoSearch extends Activity {
         webView.setVisibility(View.GONE);
         webView.destroy();
         super.onPause();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        webView.saveState(outState);
     }
 
 }

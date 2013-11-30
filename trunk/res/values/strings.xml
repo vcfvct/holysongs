@@ -25,6 +25,7 @@
     <string name="alert_message">将使用手机流量，是否继续？</string>
     <string name="ok_button">继续</string>
     <string name="cancel_button">取消</string>
+    <string name="loading_video">努力加载中…</string>
 
     <string-array name="font_size_array">
         <item>16</item>
