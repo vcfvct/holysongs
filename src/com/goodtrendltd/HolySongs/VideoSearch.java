@@ -62,7 +62,6 @@ public class VideoSearch extends Activity {
             return true;
         }
         return super.onKeyDown(keyCode, event);
-
     }
 
     @Override
@@ -76,6 +75,12 @@ public class VideoSearch extends Activity {
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         webView.saveState(outState);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        webView.stopLoading();
     }
 
 }
