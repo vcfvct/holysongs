@@ -54,7 +54,6 @@ public class HTML5WebView extends WebView {
 
         // Configure the webview
         WebSettings s = getSettings();
-        s.setBuiltInZoomControls(true);
         s.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
         s.setUseWideViewPort(true);
         s.setLoadWithOverviewMode(true);
@@ -97,17 +96,6 @@ public class HTML5WebView extends WebView {
 
     public void hideCustomView() {
         mWebChromeClient.onHideCustomView();
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            if ((mCustomView == null) && canGoBack()){
-                goBack();
-                return true;
-            }
-        }
-        return super.onKeyDown(keyCode, event);
     }
 
     private class MyWebChromeClient extends WebChromeClient {
