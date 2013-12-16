@@ -55,8 +55,8 @@ public class HTML5WebView extends WebView {
         // Configure the webview
         WebSettings s = getSettings();
         s.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
-        s.setUseWideViewPort(true);
-        s.setLoadWithOverviewMode(true);
+//        s.setUseWideViewPort(true);
+//        s.setLoadWithOverviewMode(true);
         s.setSavePassword(true);
         s.setSaveFormData(true);
         s.setJavaScriptEnabled(true);

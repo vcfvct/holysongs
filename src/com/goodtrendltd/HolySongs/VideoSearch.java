@@ -21,7 +21,6 @@ import android.webkit.WebViewClient;
 public class VideoSearch extends Activity {
     private String target;
     private String songName;
-//    private WebView webView;
     private HTML5WebView webView;
     private ProgressDialog pd;
 
@@ -66,6 +65,7 @@ public class VideoSearch extends Activity {
 
     @Override
     public void onPause() {
+        webView.stopLoading();
         webView.setVisibility(View.GONE);
         webView.destroy();
         super.onPause();
