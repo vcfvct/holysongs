@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.PixelFormat;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.*;
@@ -205,8 +206,26 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
             case R.id.settings:
                 openSettings();
                 return true;
+            case R.id.sharing:
+                openSharing();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openSharing() {
+        try {
+            Intent i = new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(Intent.EXTRA_SUBJECT, "敬拜赞美诗");
+            StringBuilder stringBuffer = new StringBuilder();
+            stringBuffer.append("\n敬拜赞美诗App安装地址: \n\n ");
+            stringBuffer.append(" 安卓：").append(getString(R.string.app_url_android)).append(" \n\n");
+            stringBuffer.append(" 苹果：").append(getString(R.string.app_url_ios)).append(" \n\n");
+            i.putExtra(Intent.EXTRA_TEXT, stringBuffer.toString());
+            startActivity(Intent.createChooser(i, "选择用于分享的app"));
+        } catch (Exception e) { //e.toString();
         }
     }
 

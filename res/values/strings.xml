@@ -3,6 +3,8 @@
     <string name="app_name">敬拜赞美诗</string>
     <string name="about">关于App</string>
     <string name="settings_text">设置</string>
+    <string name="sharing_app_text">分享此app给好友</string>
+    <string name="sharing_lyric_text">分享歌词</string>
     <string name="app_pref">appPrefFile</string>
 
     <string name="font_size_prompt">选择字体大小 当前为: </string>
@@ -26,6 +28,9 @@
     <string name="ok_button">继续</string>
     <string name="cancel_button">取消</string>
     <string name="loading_video">努力加载中…</string>
+
+    <string name="app_url_android">http://play.google.com/store/apps/details?id=com.goodtrendltd.HolySongs</string>
+    <string name="app_url_ios">https://itunes.apple.com/us/app/jing-bai-zan-mei-shi/id729679789?mt=8&amp;uo=4</string>
 
     <string-array name="font_size_array">
         <item>16</item>

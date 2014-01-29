@@ -5,6 +5,9 @@
     <item android:id="@+id/settings"
           android:title="@string/settings_text"
           android:showAsAction="never" />
+    <item android:id="@+id/sharing"
+          android:title="@string/sharing_app_text"
+          android:showAsAction="never" />
     <item android:id="@+id/about"
           android:title="@string/about"
           android:showAsAction="never" />
