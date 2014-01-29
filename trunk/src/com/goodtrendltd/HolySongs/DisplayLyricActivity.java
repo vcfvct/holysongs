@@ -16,6 +16,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
 
 /**
@@ -27,7 +28,9 @@ import android.widget.TextView;
 public class DisplayLyricActivity extends Activity {
     public static String SEARCH_TARGET = "com.goodtrendltd.searchTarget";
 
+    private ShareActionProvider mShareActionProvider;
     private String songName;
+    private String lyric;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +44,7 @@ public class DisplayLyricActivity extends Activity {
         setContentView(R.layout.lyric_view);
 
         Intent intent = getIntent();
-        String lyric = intent.getStringExtra(MainActivity.LYRIC);
+        lyric = intent.getStringExtra(MainActivity.LYRIC);
         songName = intent.getStringExtra(MainActivity.SONG_NAME);
 
         // Create the text view
@@ -64,6 +67,18 @@ public class DisplayLyricActivity extends Activity {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.lyricview_actions, menu);
+        // Locate MenuItem with ShareActionProvider
+        MenuItem item = menu.findItem(R.id.menu_item_share);
+        // Fetch and store ShareActionProvider
+        mShareActionProvider = (ShareActionProvider) item.getActionProvider();
+
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        i.putExtra(Intent.EXTRA_SUBJECT, songName);
+        i.putExtra(Intent.EXTRA_TEXT, lyric);
+
+        mShareActionProvider.setShareIntent(i);
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -118,5 +133,12 @@ public class DisplayLyricActivity extends Activity {
         intent.putExtra(SEARCH_TARGET, target);
         intent.putExtra(MainActivity.SONG_NAME, songName);
         startActivity(intent);
+    }
+
+    // Call to update the share intent
+    private void setShareIntent(Intent shareIntent) {
+        if (mShareActionProvider != null) {
+            mShareActionProvider.setShareIntent(shareIntent);
+        }
     }
 }
