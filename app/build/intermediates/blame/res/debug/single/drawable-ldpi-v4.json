@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/video_icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/video_icon.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/icon.png"
+    }
+]

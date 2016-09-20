@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/assets"><file name="songs.xml" path="/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/assets/songs.xml"/></source><source path="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/debug/assets"/></dataSet></merger>

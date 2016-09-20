@@ -1,0 +1,604 @@
+[
+    {
+        "outputFile": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 11,
+                    "endColumn": 19,
+                    "endOffset": 304
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1621,
+                        "endLine": 43,
+                        "endColumn": 19,
+                        "endOffset": 1879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 309,
+                    "endColumn": 39,
+                    "endOffset": 344
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 39,
+                        "endOffset": 136
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 349,
+                    "endColumn": 55,
+                    "endOffset": 400
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1185,
+                        "endColumn": 55,
+                        "endOffset": 1236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 405,
+                    "endColumn": 48,
+                    "endOffset": 449
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1135,
+                        "endColumn": 48,
+                        "endOffset": 1179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 454,
+                    "endColumn": 42,
+                    "endOffset": 492
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 42,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 497,
+                    "endColumn": 48,
+                    "endOffset": 541
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 297,
+                        "endColumn": 48,
+                        "endOffset": 341
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 546,
+                    "endColumn": 115,
+                    "endOffset": 657
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1382,
+                        "endColumn": 115,
+                        "endOffset": 1493
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 662,
+                    "endColumn": 118,
+                    "endOffset": 776
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1499,
+                        "endColumn": 118,
+                        "endOffset": 1613
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 781,
+                    "endColumn": 44,
+                    "endOffset": 821
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1284,
+                        "endColumn": 44,
+                        "endOffset": 1324
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 826,
+                    "endColumn": 55,
+                    "endOffset": 877
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 408,
+                        "endColumn": 55,
+                        "endOffset": 459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 882,
+                    "endColumn": 57,
+                    "endOffset": 935
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 349,
+                        "endColumn": 57,
+                        "endOffset": 402
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 940,
+                    "endColumn": 57,
+                    "endOffset": 993
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 465,
+                        "endColumn": 57,
+                        "endOffset": 518
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 998,
+                    "endColumn": 48,
+                    "endOffset": 1042
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1330,
+                        "endColumn": 48,
+                        "endOffset": 1374
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1047,
+                    "endColumn": 60,
+                    "endOffset": 1103
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 526,
+                        "endColumn": 60,
+                        "endOffset": 582
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1108,
+                    "endColumn": 57,
+                    "endOffset": 1161
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 588,
+                        "endColumn": 57,
+                        "endOffset": 641
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1166,
+                    "endColumn": 40,
+                    "endOffset": 1202
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1242,
+                        "endColumn": 40,
+                        "endOffset": 1278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1207,
+                    "endColumn": 44,
+                    "endOffset": 1247
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 44,
+                        "endOffset": 182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1252,
+                    "endColumn": 54,
+                    "endOffset": 1302
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 188,
+                        "endColumn": 54,
+                        "endOffset": 238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1307,
+                    "endColumn": 51,
+                    "endOffset": 1354
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 244,
+                        "endColumn": 51,
+                        "endOffset": 291
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1359,
+                    "endColumn": 39,
+                    "endOffset": 1394
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 877,
+                        "endColumn": 39,
+                        "endOffset": 912
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1399,
+                    "endColumn": 43,
+                    "endOffset": 1438
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 746,
+                        "endColumn": 43,
+                        "endOffset": 785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1443,
+                    "endColumn": 70,
+                    "endOffset": 1509
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1063,
+                        "endColumn": 70,
+                        "endOffset": 1129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1514,
+                    "endColumn": 39,
+                    "endOffset": 1549
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 836,
+                        "endColumn": 39,
+                        "endOffset": 871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1554,
+                    "endColumn": 43,
+                    "endOffset": 1593
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 701,
+                        "endColumn": 43,
+                        "endOffset": 740
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1598,
+                    "endColumn": 70,
+                    "endOffset": 1664
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 991,
+                        "endColumn": 70,
+                        "endOffset": 1057
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1669,
+                    "endColumn": 43,
+                    "endOffset": 1708
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 791,
+                        "endColumn": 43,
+                        "endOffset": 830
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1713,
+                    "endColumn": 50,
+                    "endOffset": 1759
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 649,
+                        "endColumn": 50,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1764,
+                    "endColumn": 71,
+                    "endOffset": 1831
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 918,
+                        "endColumn": 71,
+                        "endOffset": 985
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 1836,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 1999
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 2049,
+                        "endLine": 51,
+                        "endColumn": 12,
+                        "endOffset": 2214
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2004,
+                    "endLine": 44,
+                    "endColumn": 12,
+                    "endOffset": 2156
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1887,
+                        "endLine": 47,
+                        "endColumn": 12,
+                        "endOffset": 2041
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 2161,
+                    "endLine": 47,
+                    "endColumn": 12,
+                    "endOffset": 2316
+                },
+                "from": {
+                    "file": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 53,
+                        "startColumn": 4,
+                        "startOffset": 2222,
+                        "endLine": 55,
+                        "endColumn": 12,
+                        "endOffset": 2379
+                    }
+                }
+            }
+        ]
+    }
+]

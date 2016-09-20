@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="92302f6c916fc1b7697a4d6a0beca0f1ee6103fd">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run_d28b58720d35d0fd4884f9e1b6a11a4bb30d4538.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6cd1335f7fd3bc685954561785cc8d4e0f42d502">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_dd1590e1c9828b8cdbe3e07a3787ed986c1cbd31.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/pinyin4j-2.5.0_b7d18e4ea8402e455cf011254762232a2b9ee803.jar" />
+    </item>
+
+</items>

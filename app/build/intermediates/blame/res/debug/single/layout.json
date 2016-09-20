@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/video_loading_progress.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/video_loading_progress.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/video_html5_screen.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/video_html5_screen.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/lyric_view.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/lyric_view.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/song_item.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/song_item.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/settings_view.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/settings_view.xml"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/layout/list_position.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/layout/list_position.xml"
+    }
+]

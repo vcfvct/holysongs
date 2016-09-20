@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:2:1-35:12
+	package
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:3:11-47
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:5:11-36
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:4:11-34
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:5-73
+	android:targetSdkVersion
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:42-71
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:15-41
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:9:22-64
+application
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:11:5-34:19
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:11:18-50
+	android:icon
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:11:51-80
+activity#com.goodtrendltd.HolySongs.MainActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:12:9-19:20
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:14:19-51
+	android:theme
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:12:19-66
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:13:19-46
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:15:13-18:29
+action#android.intent.action.MAIN
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:16:17-68
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:17:17-76
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.goodtrendltd.HolySongs.DisplayLyricActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:20:9-23:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:22:19-37
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:23:19-60
+	android:theme
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:20:19-58
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:21:19-55
+activity#com.goodtrendltd.HolySongs.AboutActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:24:9-26:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:25:19-37
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:26:19-60
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:24:19-48
+activity#com.goodtrendltd.HolySongs.SettingsActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:27:9-29:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:28:19-39
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:29:19-60
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:27:19-51
+activity#com.goodtrendltd.HolySongs.VideoSearch
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:30:9-33:57
+	android:screenOrientation
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:33:19-55
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:31:19-39
+	android:hardwareAccelerated
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:32:19-53
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:30:19-46

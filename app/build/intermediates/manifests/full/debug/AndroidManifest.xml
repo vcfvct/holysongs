@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goodtrendltd.HolySongs"
+    android:versionCode="8"
+    android:versionName="2.5" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.goodtrendltd.HolySongs.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.goodtrendltd.HolySongs.DisplayLyricActivity"
+            android:label="歌词"
+            android:parentActivityName="com.goodtrendltd.HolySongs.MainActivity"
+            android:theme="@style/MyHoloLightTheme" />
+        <activity
+            android:name="com.goodtrendltd.HolySongs.AboutActivity"
+            android:label="关于"
+            android:parentActivityName="com.goodtrendltd.HolySongs.MainActivity" />
+        <activity
+            android:name="com.goodtrendltd.HolySongs.SettingsActivity"
+            android:label="选项设置"
+            android:parentActivityName="com.goodtrendltd.HolySongs.MainActivity" />
+        <activity
+            android:name="com.goodtrendltd.HolySongs.VideoSearch"
+            android:hardwareAccelerated="true"
+            android:label="视频搜索"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

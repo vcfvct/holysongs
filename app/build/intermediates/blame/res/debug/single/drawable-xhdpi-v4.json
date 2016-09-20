@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-xhdpi/icon.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/video_icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-xhdpi/video_icon.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/default_video_poster.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-xhdpi/default_video_poster.png"
+    }
+]

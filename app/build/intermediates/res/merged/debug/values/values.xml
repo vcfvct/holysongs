@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="font_size_array">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+    </string-array>
+    <string name="about">关于App</string>
+    <string name="alert_message">将使用手机流量，是否继续？</string>
+    <string name="alert_title">没有连接wifi</string>
+    <string name="app_name">敬拜赞美诗</string>
+    <string name="app_pref">appPrefFile</string>
+    <string name="app_url_android">http://play.google.com/store/apps/details?id=com.goodtrendltd.HolySongs</string>
+    <string name="app_url_ios">https://itunes.apple.com/us/app/jing-bai-zan-mei-shi/id729679789?mt=8&amp;uo=4</string>
+    <string name="cancel_button">取消</string>
+    <string name="font_size_pref_key">fontSize</string>
+    <string name="font_size_prompt">选择字体大小 当前为: </string>
+    <string name="font_size_resume_default">恢复默认</string>
+    <string name="loading_video">努力加载中…</string>
+    <string name="night_mode_label_text">夜间模式(黑色背景)</string>
+    <string name="night_mode_pref_key">nightMode</string>
+    <string name="ok_button">继续</string>
+    <string name="settings_text">设置</string>
+    <string name="sharing_app_text">分享此app给好友</string>
+    <string name="sharing_lyric_text">分享歌词</string>
+    <string name="tudou">tudou</string>
+    <string name="tudou_menu">土豆搜索</string>
+    <string name="tudou_url">http://www.soku.com/m/t/video?q=</string>
+    <string name="youku">youku</string>
+    <string name="youku_menu">优酷搜索</string>
+    <string name="youku_url">http://www.soku.com/m/y/video?q=</string>
+    <string name="youtube">youtube</string>
+    <string name="youtube_menu">youtube搜索</string>
+    <string name="youtube_url">http://m.youtube.com/results?q=</string>
+    <style name="MyHoloLightTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    <style name="MyHoloTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/video_icon</item>
+    </style>
+</resources>
