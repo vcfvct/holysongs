@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 24
     buildToolsVersion "24.0.1"
 
     defaultConfig {
         applicationId "com.goodtrendltd.HolySongs"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 24
     }
 
     buildTypes {
@@ -19,5 +19,13 @@ android {
 }
 
 dependencies {
+
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.google.android.gms:play-services-analytics:8.3.0'
+
+    compile files('libs/org.apache.http.legacy.jar')
     compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/quickblox-android-sdk-core-2.2.6.jar')
+    compile files('libs/quickblox-android-sdk-messages-2.2.6.jar')
+    compile files('libs/quickblox-android-sdk-chat-2.2.6.jar')
 }

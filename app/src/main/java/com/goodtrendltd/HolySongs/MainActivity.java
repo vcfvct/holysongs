@@ -41,11 +41,11 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = getSharedPreferences(getString(R.string.app_pref), MODE_PRIVATE);
-        if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
-            setTheme(android.R.style.Theme_Holo);
-        } else {
-            setTheme(android.R.style.Theme_Holo_Light);
-        }
+//        if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
+//            setTheme(android.R.style.Theme_Holo);
+//        } else {
+//            setTheme(android.R.style.Theme_Holo_Light);
+//        }
         setContentView(R.layout.main);
 
 

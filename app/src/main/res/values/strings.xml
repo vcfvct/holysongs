@@ -54,4 +54,46 @@
     <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/video_icon</item>
     </style>
+
+
+    <!-- Chat -->
+    <string name="chat_title">信仰答疑</string>
+    <string name="chat_need_prayer">需要为你祷告吗？</string>
+    <string name="find_church_text">找教会</string>
+    <string name="find_church_subtext">联系我们</string>
+    <string name="chat_now">开始聊天</string>
+    <string name="chat_welcome_message">你好! 有什么是我们可以为你祷告的？</string>
+    <string name="chat_notification_title">新消息</string>
+    <string name="chat_public_notification">你收到了一条新消息</string>
+    <string name="info_prompt">我怎么称呼你？</string>
+    <string name="name_prompt">名字</string>
+    <string name="decision_error">选择您的信仰状况</string>
+    <string name="seeker">我还不是基督徒而且对信仰有很多疑问</string>
+    <string name="new_christian">我刚刚决定相信耶稣基督</string>
+    <string name="recommitted">我很久没有去教会想重新去教会信耶稣</string>
+    <string name="christian_evangelical">我是基督徒且我很和其他人分享福音</string>
+    <string name="christian_grow">我是一位基督徒且很想在信仰中成长</string>
+    <string name="undecided">我还没有决定，但很希望了解基督教信仰</string>
+    <string name="submit">提交</string>
+    <string name="me">我</string>
+    <string name="mentor">导师</string>
+    <string name="send">发送</string>
+    <string name="network_failure">网络访问失败</string>
+    <string name="network_failure_auto">无法连接网络，播放失败。</string>
+    <string name="registering">正在注册...</string>
+    <string name="chat_form_title">你们不要放弃自己的聚会，像某些人所习惯的那样，而要彼此鼓励；你们既然看见那日子临近，就更应该这样。</string>
+    <string name="chat_form_title_version">-- 希伯来书10:25 --</string>
+    <string name="chat_form_submit_msg_01">我们会尽快联系您，为您推荐附近坚持圣经真理并且帮助你生命成长的教会聚会。</string>
+    <string name="chat_form_submit_msg_02">请留下您的联系方式:</string>
+    <string name="chat_form_submit_name">姓名:</string>
+    <string name="chat_form_submit_phone">手机:</string>
+    <string name="chat_form_submit_address">地址:</string>
+    <string name="chat_form_submit_button">提 交</string>
+
+
+    <string name="name_prompt_error">请提供名字.</string>
+    <string name="error_phone">请输入手机号码!</string>
+    <string name="error_address">请输入地址!</string>
+
+    <string name="skip">跳过</string>
 </resources>
