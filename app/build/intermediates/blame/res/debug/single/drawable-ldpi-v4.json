@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_home_church.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_home_church.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/pic_church.jpeg",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/pic_church.jpeg"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/video_icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/video_icon.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_warning_error.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_warning_error.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_video_library.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_video_library.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/icon.png"
+    }
+]

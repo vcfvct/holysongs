@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/chat_form_submit_msg_01"
+        android:textSize="19dp"
+        android:textColor="@color/theme_dark_grey"
+        android:layout_weight="13"
+        android:gravity="left|start"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view"/>
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:gravity="left|start"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp"
+                android:textColor="@color/theme_color"
+                android:text="@string/chat_form_submit_name"
+                />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_gravity="right|end"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="22dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_dark_grey"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="80dp"
+                android:gravity="left"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp"
+                android:textColor="@color/theme_color"
+                android:text="@string/chat_form_submit_phone"
+                 />
+
+            <EditText
+                android:id="@+id/txt_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="right"
+                android:text=""
+                android:textSize="22dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_dark_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:layout_gravity="center_vertical"
+                android:textSize="22dp"
+                android:textColor="@color/theme_color"
+                android:text="@string/chat_form_submit_address"
+                />
+
+            <EditText
+                android:id="@+id/txt_address"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="right"
+                android:text=""
+                android:textSize="22dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_dark_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:text="@string/chat_form_submit_button"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                style="@style/button_theme_green"
+                android:layout_width="180dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

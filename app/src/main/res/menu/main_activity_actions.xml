@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/settings"
+          android:title="@string/settings_text"
+          app:showAsAction="never" />
+    <item android:id="@+id/sharing"
+          android:title="@string/sharing_app_text"
+        app:showAsAction="never" />
+    <item android:id="@+id/about"
+          android:title="@string/about"
+        app:showAsAction="never" />
+    <item android:id="@+id/gospel"
+        android:title="@string/gospel_kown_jesus"
+        app:showAsAction="never" />
+</menu>

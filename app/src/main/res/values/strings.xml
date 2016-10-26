@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">敬拜赞美诗</string>
+    <string name="about">关于App</string>
+    <string name="settings_text">设置</string>
+    <string name="sharing_app_text">分享此app给好友</string>
+    <string name="sharing_lyric_text">分享歌词</string>
+    <string name="app_pref">appPrefFile</string>
+
+    <string name="font_size_prompt">选择字体大小 当前为: </string>
+    <string name="font_size_pref_key">fontSize</string>
+    <string name="font_size_resume_default">恢复默认</string>
+
+    <string name="night_mode_label_text">夜间模式(黑色背景)</string>
+    <string name="night_mode_pref_key">nightMode</string>
+
+    <string name="youtube_menu">youtube搜索</string>
+    <string name="youku_menu">优酷搜索</string>
+    <string name="tudou_menu">土豆搜索</string>
+    <string name="youtube">youtube</string>
+    <string name="youku">youku</string>
+    <string name="tudou">tudou</string>
+    <string name="youtube_url">http://m.youtube.com/results?q=</string>
+    <string name="youku_url">http://www.soku.com/m/y/video?q=</string>
+    <string name="tudou_url">http://www.soku.com/m/t/video?q=</string>
+    <string name="alert_title">没有连接wifi</string>
+    <string name="alert_message">将使用手机流量，是否继续？</string>
+    <string name="ok_button">继续</string>
+    <string name="cancel_button">取消</string>
+    <string name="loading_video">努力加载中…</string>
+
+    <string name="app_url_android">http://play.google.com/store/apps/details?id=com.goodtrendltd.HolySongs</string>
+    <string name="app_url_ios">https://itunes.apple.com/us/app/jing-bai-zan-mei-shi/id729679789?mt=8&amp;uo=4</string>
+
+    <string-array name="font_size_array">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+    </string-array>
+
+
+
+    <!-- Chat -->
+    <string name="chat_title">信仰答疑</string>
+    <string name="chat_need_prayer">需要为你祷告吗？</string>
+    <string name="find_church_text">找教会</string>
+    <string name="find_church_subtext">联系我们</string>
+    <string name="chat_now">开始聊天</string>
+    <string name="chat_welcome_message">你好! 有什么是我们可以为你祷告的？</string>
+    <string name="chat_welcome_message_church">谢谢！我们会看到，如果我们能为你找到一个你家附近的教堂。在此期间，我如何为你祷告？</string>
+    <string name="chat_notification_title">新消息</string>
+    <string name="chat_public_notification">你收到了一条新消息</string>
+    <string name="info_prompt">我怎么称呼你？</string>
+    <string name="name_prompt">名字</string>
+    <string name="decision_error">选择您的信仰状况</string>
+    <string name="seeker">我还不是基督徒而且对信仰有很多疑问</string>
+    <string name="new_christian">我刚刚决定相信耶稣基督</string>
+    <string name="recommitted">我很久没有去教会想重新去教会信耶稣</string>
+    <string name="christian_evangelical">我是基督徒且我很和其他人分享福音</string>
+    <string name="christian_grow">我是一位基督徒且很想在信仰中成长</string>
+    <string name="undecided">我还没有决定，但很希望了解基督教信仰</string>
+    <string name="submit">提交</string>
+    <string name="me">我</string>
+    <string name="mentor">导师</string>
+    <string name="send">发送</string>
+    <string name="network_failure">网络访问失败</string>
+    <string name="network_failure_auto">无法连接网络，播放失败。</string>
+    <string name="registering">正在注册...</string>
+    <string name="chat_form_title">你们不要放弃自己的聚会，像某些人所习惯的那样，而要彼此鼓励；你们既然看见那日子临近，就更应该这样。</string>
+    <string name="chat_form_title_version">-- 希伯来书10:25 --</string>
+    <string name="chat_form_submit_msg_01">我们会尽快联系您，为您推荐附近坚持圣经真理并且帮助你生命成长的教会聚会。</string>
+    <string name="chat_form_submit_msg_02">请留下您的联系方式:</string>
+    <string name="chat_form_submit_name">姓名:</string>
+    <string name="chat_form_submit_phone">手机:</string>
+    <string name="chat_form_submit_address">地址:</string>
+    <string name="chat_form_submit_button">提 交</string>
+
+
+    <string name="name_prompt_error">请提供名字.</string>
+    <string name="error_phone">请输入手机号码!</string>
+    <string name="error_address">请输入地址!</string>
+
+    <string name="skip">跳过</string>
+    <string name="done">返回</string>
+
+    <string name="gospel_kown_jesus">认识耶稣</string>
+    <string name="gospel_two">\t\t上帝爱你！圣经说：“神爱世人，把自己的独生子赐给世人，叫信他的人不至灭亡，却得永生”。</string>
+    <string name="gospel_three">\t\t问题是…</string>
+    <string name="gospel_four">\t\t人都犯了罪(比如撒谎 偷窃等...)，罪把我们从神中分离出来,上帝是完美而圣洁的，而我们的罪孽永远将我们分开。圣经说:“罪的工价乃是死。”</string>
+    <string name="gospel_five">\t\t但好消息是，大约2000年前，</string>
+    <string name="gospel_six">\t\t上帝派他唯一的儿子耶稣来到人间，以他无罪的生命，死在十字架上为我们的罪付出代价，最后从死里复活住在天堂。如果接受他为生命主，罪就得赦免，他就会进入你的生活，享受今生的平安和来世的永生。</string>
+    <string name="gospel_seven">\t\t如果你愿意接受他，并愿意跟随他：</string>
+    <string name="gospel_eight">\t\t你可以这样祷告：“主啊，我相信你是上帝的儿子。感谢你为我的罪孽而死。求你赦免我的罪，做我生命的主，带领我的生活。”并点击下面的按钮，告诉我们有关你在信仰上的问题。</string>
+    <string name="gospel_btn_yes">是的</string>
+    <string name="gospel_read_bible">阅读圣经</string>
+</resources>

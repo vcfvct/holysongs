@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_344dfeddcd9e030f0d1bef154e63192e3833e56f.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.1.1_cfe4f544b2e30214b270733b90f8e908f382e706.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.1.1/3af19f153122737b372622fa6c81dd11a1c6b999/support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_c8fdb7fbb88a95ecf1fc2d7cf65fa99eb6398469.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_484e75fdbb26b638b561325f5fc0482b265c774b.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.1.1_8f5bd9b688aacee718615e6c43914cebed7bc467.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/quickblox-android-sdk-core-2.2.6.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d8de63cd025aca83188c61088135b05caff578f8">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/quickblox-android-sdk-core-2.2.6_53330df90bfc906a64840963bbf8f359e4d7148c.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/quickblox-android-sdk-messages-2.2.6.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="954d7c62fb4a79f63541cdd7e5515376cf12d6a0">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/quickblox-android-sdk-messages-2.2.6_7aba50582d60952dbb2b8572a1cb88f5b072e333.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/pinyin4j-2.5.0_b7d18e4ea8402e455cf011254762232a2b9ee803.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="21f8a544227e5b0e663b811bdf851aab8c48c9cf">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_dd1590e1c9828b8cdbe3e07a3787ed986c1cbd31.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="af6ee25641df3142059c0828517aa7ee6eba08d6">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-8.3.0_a6797d1b65e26d698c6ec1b209d7719fcbce1978.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.1.1_854f51b7829a698b949d58074cf4c905882c9881.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.1.1_6a9a6cdac3211fa6806abbdab0cb277edf5f533d.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="420eda6aa79693c365be271df1a10452c3b1c4e8">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run_d28b58720d35d0fd4884f9e1b6a11a4bb30d4538.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="345a1b5cf5b144ce18ba6962bc66a7e2f26c1c1b">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.3.0_fa8d5ea780863daf7592ffb7a6755cea0e3b033c.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/quickblox-android-sdk-chat-2.2.6.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="45dc2f64fa6b555ff69766d74d2f15414c7dcbb0">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/quickblox-android-sdk-chat-2.2.6_5ab3ca4c2ff2af91fad18ce6b6c10eaa1fab23b9.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.1.1_39c3c0dfa04ef11979d53cbabd32c350044dbb2e.jar" />
+    </item>
+    <item
+        jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/libs/org.apache.http.legacy.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy_e78b0979cad02749f0dabb6181527109f5c239ce.jar" />
+    </item>
+
+</items>

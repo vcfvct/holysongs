@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="theme_color">#B16334</color>
+    <color name="theme_yellow">#8F4315</color>
+    <color name="theme_mid_dark_grey">#59595B</color>
+    <color name="theme_light_background">#ecebe7</color>
+    <color name="theme_dark_grey">#333333</color>
+    <color name="theme_light_grey">#DADADA</color>
+    <color name="black">#000000</color>
+    <color name="apptheme_color">#80cbc4</color>
+    <color name="accent_material_light">#80CBC4</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Button styles -->
+    <color name="button_light_turquoise">#80CBC4</color>
+    <color name="button_dark_turquoise">#50BABB</color>
+    <color name="button_light_plum">#E4746B</color>
+    <color name="button_dark_plum">#82313D</color>
+</resources>

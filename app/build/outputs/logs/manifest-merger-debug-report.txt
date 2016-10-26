@@ -1,0 +1,156 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:3:11-47
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:5:11-36
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:4:11-34
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:5-73
+MERGED from [com.android.support:design:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-analytics:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:42-71
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:6:15-41
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:8:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:9:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:9:22-64
+application
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:11:5-46:19
+MERGED from [com.android.support:design:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.3.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:13:9-38
+	android:theme
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:14:9-42
+activity#com.goodtrendltd.HolySongs.MainActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:16:9-22:20
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:17:19-51
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:16:19-46
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:20:27-74
+activity#com.goodtrendltd.HolySongs.GospelActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:23:9-29:20
+	android:screenOrientation
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:25:13-49
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:28:13-45
+	android:hardwareAccelerated
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:26:13-47
+	android:configChanges
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:27:13-74
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:24:13-43
+activity#com.goodtrendltd.HolySongs.DisplayLyricActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:30:9-32:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:31:19-37
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:32:19-60
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:30:19-55
+activity#com.goodtrendltd.HolySongs.AboutActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:33:9-35:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:34:19-37
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:35:19-60
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:33:19-48
+activity#com.goodtrendltd.HolySongs.SettingsActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:36:9-38:62
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:37:19-39
+	android:parentActivityName
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:38:19-60
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:36:19-51
+activity#com.goodtrendltd.HolySongs.VideoSearch
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:39:9-42:57
+	android:screenOrientation
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:42:19-55
+	android:label
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:40:19-39
+	android:hardwareAccelerated
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:41:19-53
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:39:19-46
+activity#com.goodtrendltd.HolySongs.ChatActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:43:9-49
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:43:19-47
+activity#com.goodtrendltd.HolySongs.ChatPreActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:44:9-52
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:44:19-50
+activity#com.goodtrendltd.HolySongs.ChatFormActivity
+ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:45:9-53
+	android:name
+		ADDED from /Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/AndroidManifest.xml:45:19-51
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.3.0] /Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/AndroidManifest.xml:22:13-58
