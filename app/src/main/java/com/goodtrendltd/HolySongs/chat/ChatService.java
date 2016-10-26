@@ -101,15 +101,18 @@ public class ChatService {
         Integer code;
         try
         {
+            Log.v("ChatService-post-https", "Executing register task...");
             Map<String, String> params = new HashMap<String, String>();
             Map<String,Integer> task = new HashMap<String, Integer>();
 
-            params.put("app_key", BibleSetting.getChatAPIKey(context));
+            params.put("app_key", BibleSetting.getChatAPIKey(CustomApplication.getContext()));
+            Log.v("ChatService-post-https", "Executing register task 1...");
             params.put("platform", "android");
             params.put("push_token", push_token);
+            Log.v("ChatService-post-https", "Executing register task 2...");
             task.put("task", ChatService.REGISTER_TASK);
 
-            Log.d("ChatService-post-https", "Executing register task...");
+            Log.v("ChatService-post-https", "Still registering......");
             usertask.execute(params, task);
 
             //HttpsUtil.post("https://commchannels.globalmediaoutreach.com/api/app/users", key, values);
@@ -118,7 +121,7 @@ public class ChatService {
         catch(Exception ex){
             code=1;
             System.out.println(" \t " + ex.getMessage());
-            Log.d("register:", "register failed, exception: " + ex);
+            Log.d("ChatService-register:", "register failed, exception: " + ex+" "+ex.getMessage());
         }
 
         // Create REST API session
@@ -382,11 +385,11 @@ public class ChatService {
         @Override
         protected String doInBackground(Map... params) {
             UserTask.task = ((Integer) params[1].get("task"));
-            Log.d("ChatService-UserTask", "task number: " + task);
+            Log.v("ChatService-UserTask", "task number: " + task);
 
             try
             {
-                Log.d("ChatService-UserTask", "/user task started");
+                Log.v("ChatService-UserTask", "/user task started");
                 if (context==null) {
                     context = CustomApplication.getContext();
                 }

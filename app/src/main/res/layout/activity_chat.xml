@@ -52,11 +52,12 @@
 
             <Button
                 android:id="@+id/chatSendButton"
-                android:layout_width="55dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/messageEdit"
                 android:layout_alignBottom="@id/messageEdit"
                 android:layout_alignParentRight="true"
+                style="@android:style/Widget.Button"
                 android:text="@string/send"/>
 
             <android.support.v4.widget.SwipeRefreshLayout

@@ -89,4 +89,16 @@
     <string name="error_address">Please provide the address.</string>
 
     <string name="skip">Skip</string>
+    <string name="done">done</string>
+
+    <string name="gospel_kown_jesus">Know Jesus</string>
+    <string name="gospel_two">\t\tGod loves you! The Bible says: "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."</string>
+    <string name="gospel_three">\t\tThe problem is…</string>
+    <string name="gospel_four">\t\tEveryone has sinned (such as lying, stealing, etc …) and that sin separates us from God, God is perfect and holy, and our sins separate us forever from Him. The Bible says: "The wages of sin is death."</string>
+    <string name="gospel_five">\t\tBut the good news is... </string>
+    <string name="gospel_six">\t\tAbout 2,000 years ago, God sent his only son Jesus to the world. He lived a sinless life, died to pay for our sins on the cross, and then He rose from the dead. If you accept Him as Lord of your life, your sin will be forgiven. He will come into your life and give you peace and everlasting life.</string>
+    <string name="gospel_seven">\t\tIf you are willing to accept Christ and turn from sin, you can pray:</string>
+    <string name="gospel_eight">\t\t\"Jesus, I believe you are God\'s son. Thank you for dying on the cross in my place, to take away my sin. Please forgive me for what I\'ve done wrong. I want to follow you and make you the leader of my whole life, forever. Amen.\" Below, you can press \"Yes\" to ask us questions about your faith.</string>
+    <string name="gospel_btn_yes">Yes</string>
+    <string name="gospel_read_bible">Start Reading</string>
 </resources>

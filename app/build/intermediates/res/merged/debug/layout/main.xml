@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <ListView
-            android:id="@android:id/list"
+            android:id="@+id/list"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:cacheColorHint="#00000000"
@@ -28,7 +28,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="125dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"/>
 
 </RelativeLayout>

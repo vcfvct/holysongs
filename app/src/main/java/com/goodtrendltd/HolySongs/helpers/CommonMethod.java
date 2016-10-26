@@ -136,20 +136,6 @@ public class CommonMethod {
         return false;
     }
 
-    public static Boolean alreadyOpenHomeActivity(Context context) {
-        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        List<ActivityManager.RunningTaskInfo> runningTaskInfos = manager.getRunningTasks(10);
-        String cmpNameTemp = null;
-        Boolean isNotification = false;
-        for(ActivityManager.RunningTaskInfo item : runningTaskInfos){
-            if(item.baseActivity.toString().indexOf("MainActivity")>=0)
-            {
-                isNotification = true;
-            }
-        }
-        return isNotification;
-    }
-
     //获取本地语言
     public static String getLocallanguage(Context context){
         return context.getResources().getConfiguration().locale.getLanguage();

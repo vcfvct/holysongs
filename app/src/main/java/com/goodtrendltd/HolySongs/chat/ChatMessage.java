@@ -60,7 +60,7 @@ public class ChatMessage {
         sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
         return sdf.format(this.date);
     }
-    public String getPrettyDate(Context ctxt, Calendar calendar) {
+    public String getPrettyDate(Context ctxt) {
         //Date to String, ex. Dec 31, 1969 4:00:00 PM
         String prettyDate = "";
         // prettyDate = df.format(prettyDate);

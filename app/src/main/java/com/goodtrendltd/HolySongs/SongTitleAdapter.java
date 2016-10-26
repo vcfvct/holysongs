@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.SectionIndexer;
 import android.widget.TextView;
+
+import com.goodtrendltd.HolySongs.bus.BibleSetting;
 import com.goodtrendltd.HolySongs.helpers.HanziHelper;
 
 /**
@@ -25,14 +27,14 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
     private SparseIntArray alphaMap;
     private List<String> items;
     private Context context;
-    private SharedPreferences sharedPreferences;
+    Boolean nightMode = true;
 
-    public SongTitleAdapter(Context context, List<String> items, SharedPreferences sharedPreferences) {
+    public SongTitleAdapter(Context context, List<String> items) {
         super(context, R.layout.song_item, items);
         this.alphaMap = new SparseIntArray(Sidebar.ALPHABET_ARRAY.length);
         this.items = items;
         this.context = context;
-        this.sharedPreferences = sharedPreferences;
+        nightMode = BibleSetting.getNightMode(context);
     }
 
     @Override
@@ -48,7 +50,7 @@ public class SongTitleAdapter extends ArrayAdapter<String> implements SectionInd
         }
         String p = items.get(position);
         viewHolder.name.setText(p);
-        if (!sharedPreferences.getBoolean(getContext().getString(R.string.night_mode_pref_key), true)) {
+        if (!nightMode) {
             viewHolder.name.setTextColor(Color.parseColor("#000000"));
 //            convertView.setBackgroundColor(Color.parseColor("#FFFFFF"));
         }

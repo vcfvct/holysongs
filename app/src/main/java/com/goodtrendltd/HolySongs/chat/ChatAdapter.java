@@ -163,7 +163,7 @@ public class ChatAdapter extends BaseAdapter {
     }
 
     private String getTimeText(ChatMessage message) {
-        return message.getPrettyDate(context, this.calendar);
+        return message.getPrettyDate(context);
     }
 
     private static class ViewHolder {

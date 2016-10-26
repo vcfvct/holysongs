@@ -6,14 +6,4 @@
     android:background="@android:color/transparent"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:elevation="0dp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Toolbar Title"
-        android:layout_gravity="center"
-        android:textSize="15sp"
-        android:textColor="@android:color/white"
-        style="@style/MyActionBar"
-        android:id="@+id/toolbar_title" />
 </android.support.v7.widget.Toolbar>

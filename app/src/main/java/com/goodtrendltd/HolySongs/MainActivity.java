@@ -8,10 +8,17 @@ import android.graphics.PixelFormat;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.*;
 import android.view.WindowManager.LayoutParams;
 import android.widget.*;
+
+import com.goodtrendltd.HolySongs.bus.BibleSetting;
+import com.goodtrendltd.HolySongs.bus.GlobalMediaStar;
 import com.goodtrendltd.HolySongs.helpers.ChineseCharComp;
+import com.goodtrendltd.HolySongs.helpers.CommonMethod;
 import com.goodtrendltd.HolySongs.helpers.HanziHelper;
 import com.goodtrendltd.HolySongs.helpers.XMLParser;
 import org.w3c.dom.Document;
@@ -21,7 +28,7 @@ import org.w3c.dom.NodeList;
 import java.io.*;
 import java.util.*;
 
-public class MainActivity extends ListActivity implements AbsListView.OnScrollListener {
+public class MainActivity extends AppCompatActivity implements AbsListView.OnScrollListener {
 
 
     public final static String LYRIC = "com.goodtrendltd.LYRIC";
@@ -36,19 +43,27 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     private boolean mShowing;
     private boolean mReady;
     private char mPrevLetter = Character.MIN_VALUE;
-    private SharedPreferences sharedPreferences;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        sharedPreferences = getSharedPreferences(getString(R.string.app_pref), MODE_PRIVATE);
-//        if (sharedPreferences.getBoolean(getString(R.string.night_mode_pref_key), true)) {
-//            setTheme(android.R.style.Theme_Holo);
-//        } else {
-//            setTheme(android.R.style.Theme_Holo_Light);
-//        }
+
+        int firstLoad = BibleSetting.getFirstStart(this);
+        if(firstLoad!=0)
+        {
+            Intent i = new Intent();
+            i.setClass(this,GospelActivity.class);
+            i.putExtra("origin","first");
+            recordInstall();
+            startActivity(i);
+        }
+        if (BibleSetting.getNightMode(this)) {
+            setTheme(R.style.DarkAppTheme);
+        } else {
+            setTheme(R.style.BaseAppTheme);
+        }
         setContentView(R.layout.main);
 
-
+        recordRun();
         XMLParser parser = new XMLParser();
         String myData = getXml("songs.xml");
         setDataFromXML(parser, myData);
@@ -57,7 +72,7 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
 
         ListView listView = getListView();
         listView.setTextFilterEnabled(true);
-        listView.setAdapter(new SongTitleAdapter(getApplicationContext(), titleList, sharedPreferences));
+        listView.setAdapter(new SongTitleAdapter(getApplicationContext(), titleList));
         Sidebar sb = (Sidebar) findViewById(R.id.side_bar);
         sb.bindListView(getListView());
 
@@ -69,6 +84,45 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
             }
         });
         setupIndicator();
+
+        if (getActionBar()!=null) {
+            getActionBar().setTitle(R.string.app_name);
+        }
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab_find_church);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, ChatActivity.class);
+                startActivity(i);
+            }
+        });
+    }
+
+    private void recordInstall() {
+
+        if(CommonMethod.isNetworkAvailable(this))
+        {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    GlobalMediaStar.recordInstall(MainActivity.this);
+                }
+            }).start();
+        }
+    }
+
+    private void recordRun() {
+
+        if (CommonMethod.isNetworkAvailable(this)) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    GlobalMediaStar.recordRun(MainActivity.this);
+                }
+            }).start();
+        }
     }
 
     private void navigateToLyric(String songName) {
@@ -209,6 +263,9 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
             case R.id.sharing:
                 openSharing();
                 return true;
+            case R.id.gospel:
+                openGospel();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -237,5 +294,15 @@ public class MainActivity extends ListActivity implements AbsListView.OnScrollLi
     private void openAbout() {
         Intent intent = new Intent(this, AboutActivity.class);
         startActivity(intent);
+    }
+
+    private void openGospel() {
+        Intent intent = new Intent(this, GospelActivity.class);
+        intent.putExtra("origin","main");
+        startActivity(intent);
+    }
+
+    private ListView getListView() {
+        return (ListView) findViewById(R.id.list);
     }
 }

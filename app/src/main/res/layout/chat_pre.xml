@@ -44,10 +44,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="20dp"
-            android:textColor="@color/theme_green" />
-
-        <include layout="@layout/transparent_toolbar_layout"
-            android:id="@+id/toolbar" />
+            android:textColor="@color/theme_color" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,6 +98,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:layout_marginBottom="20dp"
-            android:textColor="@color/theme_green"/>
+            android:textColor="@color/theme_color"/>
     </RelativeLayout>
 </LinearLayout>

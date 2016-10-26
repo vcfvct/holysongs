@@ -16,6 +16,10 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_warning_error.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_video_library.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-ldpi/ic_video_library.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-ldpi/icon.png"
     }

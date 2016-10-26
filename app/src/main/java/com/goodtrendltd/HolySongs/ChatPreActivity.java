@@ -34,8 +34,8 @@ public class ChatPreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chat_pre);
         context = this;
-        initToolbar();
         initViews();
+        initToolbar();
 //        PushAgent.getInstance(context).onAppStart();
 //        SyncUserhandler.postAtTime(runSyncUser, 1000 * 60 * 2);
     }
@@ -50,19 +50,6 @@ public class ChatPreActivity extends AppCompatActivity {
         super.onStop();
     }
 
-    protected void initToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        mTitle.setVisibility(View.GONE);
-        setSupportActionBar(toolbar);
-        ActionBar actionbar = getSupportActionBar();
-        if (actionbar != null) {
-            actionbar.setDisplayShowTitleEnabled(false);
-            actionbar.setDisplayShowHomeEnabled(true);
-            actionbar.setDisplayHomeAsUpEnabled(true);
-        }
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -71,6 +58,15 @@ public class ChatPreActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    protected void initToolbar() {
+        ActionBar actionbar = getSupportActionBar();
+        if (actionbar != null) {
+            actionbar.setDisplayShowTitleEnabled(false);
+            actionbar.setDisplayShowHomeEnabled(true);
+            actionbar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 
 
@@ -98,6 +94,7 @@ public class ChatPreActivity extends AppCompatActivity {
                     intent.putExtra(ChatFormActivity.CATEGORY, CHURCH);
                     ChatPreActivity.this.startActivity(intent);
                 }
+                finish();
             }
         };
 

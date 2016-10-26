@@ -43,17 +43,6 @@
         <item>30</item>
     </string-array>
 
-    <style name="MyHoloTheme" parent="@android:style/Theme.Holo">
-        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
-    </style>
-
-    <style name="MyHoloLightTheme" parent="@android:style/Theme.Holo.Light">
-        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
-    </style>
-
-    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/video_icon</item>
-    </style>
 
 
     <!-- Chat -->
@@ -63,6 +52,7 @@
     <string name="find_church_subtext">联系我们</string>
     <string name="chat_now">开始聊天</string>
     <string name="chat_welcome_message">你好! 有什么是我们可以为你祷告的？</string>
+    <string name="chat_welcome_message_church">谢谢！我们会看到，如果我们能为你找到一个你家附近的教堂。在此期间，我如何为你祷告？</string>
     <string name="chat_notification_title">新消息</string>
     <string name="chat_public_notification">你收到了一条新消息</string>
     <string name="info_prompt">我怎么称呼你？</string>
@@ -96,4 +86,16 @@
     <string name="error_address">请输入地址!</string>
 
     <string name="skip">跳过</string>
+    <string name="done">返回</string>
+
+    <string name="gospel_kown_jesus">认识耶稣</string>
+    <string name="gospel_two">\t\t上帝爱你！圣经说：“神爱世人，把自己的独生子赐给世人，叫信他的人不至灭亡，却得永生”。</string>
+    <string name="gospel_three">\t\t问题是…</string>
+    <string name="gospel_four">\t\t人都犯了罪(比如撒谎 偷窃等...)，罪把我们从神中分离出来,上帝是完美而圣洁的，而我们的罪孽永远将我们分开。圣经说:“罪的工价乃是死。”</string>
+    <string name="gospel_five">\t\t但好消息是，大约2000年前，</string>
+    <string name="gospel_six">\t\t上帝派他唯一的儿子耶稣来到人间，以他无罪的生命，死在十字架上为我们的罪付出代价，最后从死里复活住在天堂。如果接受他为生命主，罪就得赦免，他就会进入你的生活，享受今生的平安和来世的永生。</string>
+    <string name="gospel_seven">\t\t如果你愿意接受他，并愿意跟随他：</string>
+    <string name="gospel_eight">\t\t你可以这样祷告：“主啊，我相信你是上帝的儿子。感谢你为我的罪孽而死。求你赦免我的罪，做我生命的主，带领我的生活。”并点击下面的按钮，告诉我们有关你在信仰上的问题。</string>
+    <string name="gospel_btn_yes">是的</string>
+    <string name="gospel_read_bible">阅读圣经</string>
 </resources>

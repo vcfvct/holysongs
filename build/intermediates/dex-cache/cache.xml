@@ -61,7 +61,7 @@
         jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="e4f40f24ed7891c28fdd654367466cbb360ff756">
+        sha1="21f8a544227e5b0e663b811bdf851aab8c48c9cf">
         <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_dd1590e1c9828b8cdbe3e07a3787ed986c1cbd31.jar" />
     </item>
     <item
@@ -89,7 +89,7 @@
         jar="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="fde3f3e8406db727b3141628cf24a634ced39979">
+        sha1="420eda6aa79693c365be271df1a10452c3b1c4e8">
         <dex dex="/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/pre-dexed/debug/instant-run_d28b58720d35d0fd4884f9e1b6a11a4bb30d4538.jar" />
     </item>
     <item

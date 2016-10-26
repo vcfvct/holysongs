@@ -104,6 +104,10 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_warning_error.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_video_library.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_video_library.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },

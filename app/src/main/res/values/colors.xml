@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <color name="theme_blue">#1958AE</color>
-    <color name="theme_bright_blue">#0C96F9</color>
-    <color name="theme_green">#80CBC4</color>
-    <color name="theme_mid_grey">#A0A0A0</color>
+    <color name="theme_color">#B16334</color>
+    <color name="theme_yellow">#8F4315</color>
     <color name="theme_mid_dark_grey">#59595B</color>
-    <color name="theme_sepia">#faf3e9</color>
-    <color name="theme_dark_brown">#826842</color>
     <color name="theme_light_background">#ecebe7</color>
     <color name="theme_dark_grey">#333333</color>
     <color name="theme_light_grey">#DADADA</color>
@@ -17,20 +13,8 @@
     <color name="white">#FFFFFF</color>
 
     <!-- Button styles -->
-    <color name="button_light_blue">#46a3eb</color>
-    <color name="button_dark_blue">#1958AE</color>
     <color name="button_light_turquoise">#80CBC4</color>
     <color name="button_dark_turquoise">#50BABB</color>
-    <color name="button_light_green">#8dd991</color>
-    <color name="button_dark_green">#49a64e</color>
-    <color name="button_purple">#957A98</color>
     <color name="button_light_plum">#E4746B</color>
     <color name="button_dark_plum">#82313D</color>
-    <color name="button_light_salmon">#FF904D</color>
-    <color name="button_dark_salmon">#B16334</color>
-    <color name="button_light_yellow">#E9CA67</color>
-    <color name="button_dark_yellow">#B38B1D</color>
-
-    <color name="v5_0_1_flipper_head_title_wrapper_black_transparent">#AA000000</color>
-    <color name="galy">#ff333333</color>
 </resources>

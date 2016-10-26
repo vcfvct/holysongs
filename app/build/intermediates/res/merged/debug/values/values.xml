@@ -37,21 +37,12 @@
     <color name="bright_foreground_inverse_material_light">@color/bright_foreground_material_dark</color>
     <color name="bright_foreground_material_dark">@android:color/white</color>
     <color name="bright_foreground_material_light">@android:color/black</color>
-    <color name="button_dark_blue">#1958AE</color>
-    <color name="button_dark_green">#49a64e</color>
     <color name="button_dark_plum">#82313D</color>
-    <color name="button_dark_salmon">#B16334</color>
     <color name="button_dark_turquoise">#50BABB</color>
-    <color name="button_dark_yellow">#B38B1D</color>
-    <color name="button_light_blue">#46a3eb</color>
-    <color name="button_light_green">#8dd991</color>
     <color name="button_light_plum">#E4746B</color>
-    <color name="button_light_salmon">#FF904D</color>
     <color name="button_light_turquoise">#80CBC4</color>
-    <color name="button_light_yellow">#E9CA67</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <color name="button_purple">#957A98</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>
@@ -68,7 +59,6 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <color name="galy">#ff333333</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -103,17 +93,12 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
-    <color name="theme_blue">#1958AE</color>
-    <color name="theme_bright_blue">#0C96F9</color>
-    <color name="theme_dark_brown">#826842</color>
+    <color name="theme_color">#B16334</color>
     <color name="theme_dark_grey">#333333</color>
-    <color name="theme_green">#80CBC4</color>
     <color name="theme_light_background">#ecebe7</color>
     <color name="theme_light_grey">#DADADA</color>
     <color name="theme_mid_dark_grey">#59595B</color>
-    <color name="theme_mid_grey">#A0A0A0</color>
-    <color name="theme_sepia">#faf3e9</color>
-    <color name="v5_0_1_flipper_head_title_wrapper_black_transparent">#AA000000</color>
+    <color name="theme_yellow">#8F4315</color>
     <color name="white">#FFFFFF</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="none" value="0"/><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr name="title"/><attr format="string" name="subtitle"/><attr format="reference" name="titleTextStyle"/><attr format="reference" name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr format="reference" name="divider"/><attr format="reference" name="background"/><attr format="reference|color" name="backgroundStacked"/><attr format="reference|color" name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr name="homeAsUpIndicator"/><attr format="dimension" name="itemPadding"/><attr format="boolean" name="hideOnContentScroll"/><attr format="dimension" name="contentInsetStart"/><attr format="dimension" name="contentInsetEnd"/><attr format="dimension" name="contentInsetLeft"/><attr format="dimension" name="contentInsetRight"/><attr format="dimension" name="contentInsetStartWithNavigation"/><attr format="dimension" name="contentInsetEndWithActions"/><attr format="dimension" name="elevation"/><attr format="reference" name="popupTheme"/></declare-styleable>
     <declare-styleable name="ActionBarLayout"><attr name="android:layout_gravity"/></declare-styleable>
@@ -380,6 +365,7 @@
     <string name="chat_public_notification">你收到了一条新消息</string>
     <string name="chat_title">信仰答疑</string>
     <string name="chat_welcome_message">你好! 有什么是我们可以为你祷告的？</string>
+    <string name="chat_welcome_message_church">谢谢！我们会看到，如果我们能为你找到一个你家附近的教堂。在此期间，我如何为你祷告？</string>
     <string name="christian_evangelical">我是基督徒且我很和其他人分享福音</string>
     <string name="christian_grow">我是一位基督徒且很想在信仰中成长</string>
     <string name="common_android_wear_notification_needs_update_text"><ns1:g id="app_name">%1$s</ns1:g> requires an update to the Android Wear app.</string>
@@ -413,6 +399,7 @@
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="decision_error">选择您的信仰状况</string>
+    <string name="done">返回</string>
     <string name="error_address">请输入地址!</string>
     <string name="error_phone">请输入手机号码!</string>
     <string name="find_church_subtext">联系我们</string>
@@ -420,6 +407,16 @@
     <string name="font_size_pref_key">fontSize</string>
     <string name="font_size_prompt">选择字体大小 当前为: </string>
     <string name="font_size_resume_default">恢复默认</string>
+    <string name="gospel_btn_yes">是的</string>
+    <string name="gospel_eight">\t\t你可以这样祷告：“主啊，我相信你是上帝的儿子。感谢你为我的罪孽而死。求你赦免我的罪，做我生命的主，带领我的生活。”并点击下面的按钮，告诉我们有关你在信仰上的问题。</string>
+    <string name="gospel_five">\t\t但好消息是，大约2000年前，</string>
+    <string name="gospel_four">\t\t人都犯了罪(比如撒谎 偷窃等...)，罪把我们从神中分离出来,上帝是完美而圣洁的，而我们的罪孽永远将我们分开。圣经说:“罪的工价乃是死。”</string>
+    <string name="gospel_kown_jesus">认识耶稣</string>
+    <string name="gospel_read_bible">阅读圣经</string>
+    <string name="gospel_seven">\t\t如果你愿意接受他，并愿意跟随他：</string>
+    <string name="gospel_six">\t\t上帝派他唯一的儿子耶稣来到人间，以他无罪的生命，死在十字架上为我们的罪付出代价，最后从死里复活住在天堂。如果接受他为生命主，罪就得赦免，他就会进入你的生活，享受今生的平安和来世的永生。</string>
+    <string name="gospel_three">\t\t问题是…</string>
+    <string name="gospel_two">\t\t上帝爱你！圣经说：“神爱世人，把自己的独生子赐给世人，叫信他的人不至灭亡，却得永生”。</string>
     <string name="info_prompt">我怎么称呼你？</string>
     <string name="loading_video">努力加载中…</string>
     <string name="me">我</string>
@@ -1470,24 +1467,32 @@
         <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
         <item name="tabSelectedTextColor">?android:textColorPrimary</item>
     </style>
-    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <!--<item name="android:seekBarStyle">@style/SeekBarAppTheme</item>-->
         <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">@color/theme_green</item>
+        <item name="colorPrimary">@color/theme_color</item>
         <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">@color/button_dark_turquoise</item>
+        <item name="colorPrimaryDark">@color/theme_yellow</item>
         <!-- colorAccent is used as the default value for colorControlActivated,
              which is used to tint widgets -->
-        <item name="colorAccent">@color/theme_green</item>
+        <item name="colorAccent">@color/theme_color</item>
         <item name="android:actionBarStyle">@style/MyActionBar</item>
         <item name="android:textColorPrimary">@android:color/white</item>
         <item name="android:textColorSecondary">@android:color/white</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="DarkAppTheme" parent="Theme.AppCompat">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/theme_color</item>
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/theme_yellow</item>
+        <item name="colorAccent">@color/theme_color</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
     </style>
     <style name="MyActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:background">@color/theme_green</item>
+        <item name="android:background">@color/theme_color</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textColorSecondary">@color/white</item>
         <!-- Support library compatibility -->
@@ -1502,7 +1507,7 @@
         <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
     </style>
     <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/video_icon</item>
+        <item name="android:src">@drawable/ic_video_library</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

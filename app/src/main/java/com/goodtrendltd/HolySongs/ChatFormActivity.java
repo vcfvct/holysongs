@@ -64,7 +64,7 @@ public class ChatFormActivity extends AppCompatActivity {
                 //start chat
                 Intent intent = new Intent();
                 intent.setClass(ChatFormActivity.this, ChatActivity.class);
-                intent.putExtra(ChatActivity.CATEGORY, categoryId);
+                intent.putExtra(ChatActivity.CATEGORY, ChatPreActivity.CHURCH);
                 intent.putExtra(ChatActivity.FORM_MESSAGE, message);
                 intent.putExtra(ChatActivity.NAME, txt_name.getText().toString());
                 Log.d("chat-form", ChatActivity.CATEGORY + ": " + categoryId);
@@ -78,10 +78,6 @@ public class ChatFormActivity extends AppCompatActivity {
     }
 
     protected void initToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        TextView mTitle = (TextView) toolbar.findViewById(R.id.toolbar_title);
-        mTitle.setText(R.string.find_church_text);
-        setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         if (actionbar != null) {
             actionbar.setDisplayShowTitleEnabled(false);

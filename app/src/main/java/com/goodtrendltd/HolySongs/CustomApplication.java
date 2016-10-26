@@ -9,8 +9,10 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.goodtrendltd.HolySongs.bus.GlobalMediaStar;
 import com.goodtrendltd.HolySongs.chat.ChatService;
 import com.goodtrendltd.HolySongs.entities.ChatThreadScheduler;
+import com.goodtrendltd.HolySongs.helpers.CommonMethod;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
 

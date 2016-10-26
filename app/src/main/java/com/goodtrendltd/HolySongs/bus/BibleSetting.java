@@ -11,6 +11,7 @@ import android.support.v4.app.NotificationManagerCompat;
 import android.util.Log;
 
 import com.goodtrendltd.HolySongs.CustomApplication;
+import com.goodtrendltd.HolySongs.R;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -125,23 +126,17 @@ public class BibleSetting
         SysConfigUpdate(context, "appversion",version);
     }
 
+    public static Boolean getNightMode(Context context) {
+        SharedPreferences sharedPreferences = context.getSharedPreferences(context.getString(R.string.app_pref), Context.MODE_PRIVATE);
+        return sharedPreferences.getBoolean(context.getString(R.string.night_mode_pref_key), true);
+    }
 
     public static String getChatAPIKey(Context context) {
-        if (getLocalLanguage(context)== LocalLanguage.SIMPLIFIED_CHINESE ||
-                getLocalLanguage(context)==LocalLanguage.TRADITIONAL_CHINESE) {
-            return "dlXQHzv7o8BExfxMpvxAaFoStKjiBjPODXilvVL0L4rYvfZEAbfDDSp8bmk6TCf";
-        } else {
-            return "gVv1b3HcCx4PQkkIN5c88SX67IUL0RbpShAHgZpBtniTkg6GwtaN1kQHb8wR4Jp";
-        }
+        return "1mjl1Qryo9zkx8XQsYBxF8sTDj6nGtaBEGaYueC2FTKW3lRhJ05VBraq9B6BWrN";
     }
 
     public static String getGMOEventAPIKey(Context context) {
-        if (getLocalLanguage(context)== LocalLanguage.SIMPLIFIED_CHINESE ||
-                getLocalLanguage(context)==LocalLanguage.TRADITIONAL_CHINESE) {
-            return "WH2R9HvBNcCJYOyWOO9M4zJhl6W7btAksoZr8GALMav8xQRtJWoIL6zEYlLSZCgK";
-        } else {
-            return "F4oFIT7gEA3h8RgiDArnGFosqFc4oIXW8SpIMJ5XQwcZFMdjOFdln43nDlvtNHR";
-        }
+        return "nSNXrKQpZthbHxFuREVTSAqljFUcDipZ1ZFdnpHiXMLKK08giVpcKyPD5agbZUg";
     }
 
     public static String getAppName(Context context) {
