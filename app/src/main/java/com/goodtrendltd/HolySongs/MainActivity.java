@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
         }
         setContentView(R.layout.main);
 
+        initApplication();
         recordRun();
         XMLParser parser = new XMLParser();
         String myData = getXml("songs.xml");
@@ -98,6 +99,11 @@ public class MainActivity extends AppCompatActivity implements AbsListView.OnScr
                 startActivity(i);
             }
         });
+    }
+
+    private void initApplication() {
+        CustomApplication application = (CustomApplication)getApplication();
+        application.AppSyncData();
     }
 
     private void recordInstall() {

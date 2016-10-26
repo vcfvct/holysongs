@@ -57,7 +57,7 @@
                 android:layout_alignTop="@id/messageEdit"
                 android:layout_alignBottom="@id/messageEdit"
                 android:layout_alignParentRight="true"
-                style="@android:style/Widget.Button"
+                style="@style/button_theme_green"
                 android:text="@string/send"/>
 
             <android.support.v4.widget.SwipeRefreshLayout

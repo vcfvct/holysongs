@@ -4,6 +4,10 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/menu/lyricview_actions.xml"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/menu/chat_menu.xml",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/menu/chat_menu.xml"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/menu/main_activity_actions.xml",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/menu/main_activity_actions.xml"
     }

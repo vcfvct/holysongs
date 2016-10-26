@@ -17,4 +17,6 @@
     <color name="button_dark_turquoise">#50BABB</color>
     <color name="button_light_plum">#E4746B</color>
     <color name="button_dark_plum">#82313D</color>
+    <color name="button_light">#B16334</color>
+    <color name="button_dark">#8F4315</color>
 </resources>

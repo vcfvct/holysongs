@@ -19,7 +19,7 @@ public class ChatUser {
 //            "139404553007c647f14e6e798155ac8b8c7d22112be8879e32a0af2008";
     //public static final String USER_KEY_STORED = "a4863c60927960800da8d227b6440cf43b41c187af608ddfa"+
     //        "6903d4c144c11df4879e14c2747b31675501de04f0e818fde7d94ba2f664390e2abe48f3f9cc639";
-    public final ArrayList<ChatMessage> inbox = new ArrayList<>();
+    public final ArrayList<Integer> inbox = new ArrayList<>();
     public final ArrayList<Integer> readList = new ArrayList<>();
 
     private static ChatUser instance = null;
@@ -86,35 +86,30 @@ public class ChatUser {
             return this.inbox.size();
         }
     }
-    public ArrayList<ChatMessage> getUnread() { return this.inbox; }
 
-    public Boolean addToInbox(ChatMessage msg) {
-        if (!this.inbox.contains(msg) && !this.readList.contains(msg.getId())) {
-            this.inbox.add(msg);
+    public Boolean markAsRead(int id) {
+        if (!this.readList.contains(id)) {
+            this.readList.add(id);
             return true;
         } else {
             return false;
         }
     }
 
-    public void moveFromInbox(int id) {
-        int position = -1;
-        for (ChatMessage msg:this.inbox ) {
-            if (id==msg.getId()) {
-                position = this.inbox.indexOf(msg);
-                this.readList.add(id);
-            }
-        }
-        if (position!=-1) {
-            this.inbox.remove(position);
+    public Boolean addToInbox(ChatMessage msg) {
+        if (!this.inbox.contains(msg.getId()) && !this.readList.contains(msg.getId())) {
+            this.inbox.add(msg.getId());
+            return true;
+        } else {
+            return false;
         }
     }
 
     public void emptyInbox() {
         if (this.inbox.size()>0) {
-            for (ChatMessage msg:this.inbox ) {
-                if (!this.readList.contains(msg.getId())) {
-                    this.readList.add(msg.getId());
+            for (int msgID:this.inbox ) {
+                if (!this.readList.contains(msgID)) {
+                    this.readList.add(msgID);
                 }
             }
             this.inbox.clear();
@@ -127,6 +122,10 @@ public class ChatUser {
                 this.readList.remove(this.readList.indexOf(id));
             }
         }
+    }
+
+    public void emptyReadList() {
+        this.readList.clear();
     }
 
     public ArrayList<Integer> getReadList() {

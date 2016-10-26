@@ -23,6 +23,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -90,6 +92,7 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
     private String token = null; //app push token
     private Boolean fromGospel = false;
     private ArrayList<ChatMessage> messageList = new ArrayList<ChatMessage>();
+    private ArrayList<Integer> idList = new ArrayList<>();
     private Integer mId=0;
     private Integer SERVER_CONNECT_ATTEMPTS = 3;//number of attempts to get chat history
     private Integer retry = SERVER_CONNECT_ATTEMPTS;
@@ -193,11 +196,26 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
 
     }
 
+    //begin of menu related
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.chat_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
+                return true;
+            case R.id.findchurch:
+                showChurchForm();
+                return true;
+            case R.id.gospel:
+                showGospelActivity();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -315,6 +333,19 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
 
         onPreparing();
 
+    }
+
+    private void showChurchForm() {
+        Intent intent = new Intent();
+        intent.setClass(ChatActivity.this, ChatFormActivity.class);
+        intent.putExtra(ChatFormActivity.CATEGORY, ChatPreActivity.CHURCH);
+        ChatActivity.this.startActivity(intent);
+    }
+
+    private void showGospelActivity() {
+        Intent intent = new Intent(this, GospelActivity.class);
+        intent.putExtra("origin","main");
+        startActivity(intent);
     }
 
     @Override
@@ -542,6 +573,7 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
                 Integer i;
                 for (i = messages.size() - 1; i >= 0; i--) {
                     messageList.add(0, messages.get(i));
+                    idList.add(messages.get(i).getId());
                 }
                 adapter.notifyDataSetChanged();
                 swipeLayout.setRefreshing(false);
@@ -563,7 +595,11 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
     }
 
     private void loadPastMessages() {
-        ChatService.getMessages(Boolean.FALSE, 10, 1, new ChatService.MessageTask() {
+        getMessages(false, 10);
+    }
+
+    private void getMessages(final Boolean onlyNew, int count) {
+        ChatService.getMessages(onlyNew, count, 1, new ChatService.MessageTask() {
             @Override
             protected void onSuccessfulReceive(HttpClientUtil.ResponseObject msgResponse) {
                 onLoadFinish();
@@ -574,7 +610,7 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
                     showInfoMessage();
                 }
                 ArrayList<ChatMessage> messages = msgResponse.getMessages();
-                showMessages(messages, true);
+                showMessages(messages, onlyNew);
                 progressBar.setVisibility(View.GONE);
                 finishedLoading = true;
                 retry = SERVER_CONNECT_ATTEMPTS; //reset attempts
@@ -618,45 +654,54 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
         Log.e("ChatActivity-register", "chat alert: " + string);
     }
 
-    public void showMessages(ArrayList<ChatMessage> messages, Boolean displayAll) {
-        final ArrayList<Integer> ids = new ArrayList<Integer>();
+    // handler for received Intents for the "new messages" event
+    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // Extract data included in the Intent
+            int count = intent.getIntExtra(ChatService.COUNT, 0);
+            Log.d("chat-receiver", "Got number of messages: " + count);
+            getMessages(true, count);
+            chatUser.emptyInbox();
+        }
+    };
+
+    public void showMessages(ArrayList<ChatMessage> messages, Boolean onlyNew) {
         for (ChatMessage msg : messages) {
-            if (!msg.isOutgoing() || displayAll) {
+            // Either show all, or only new incoming messages
+            if (!msg.isOutgoing() || !onlyNew) {
+                Log.v("chat-receiver", "adding id:"+msg.getId());
+                if (!msg.isRead()) { chatUser.markAsRead(msg.getId()); }
                 showMessage(msg);
-                chatUser.moveFromInbox(msg.getId());
-                ids.add(msg.getId());
-                Log.v("receiver", "moved message " + msg);
-                Log.v("receiver", "inbox now: " + chatUser.getUnread());
-                Log.v("receiver", "readbox now: " + chatUser.getReadList());
+                Log.v("chat-receiver", "readbox now: " + chatUser.getReadList());
 
             }
         }
-        if (!ids.isEmpty()) {
-            ChatService.markAsRead(ids, new ChatService.MessageTask() {
+        if (!chatUser.getReadList().isEmpty()) {
+            ChatService.markAsRead(chatUser.getReadList(), new ChatService.MessageTask() {
                 @Override
                 protected void onSuccessfulMark() {
                     adapter.notifyDataSetChanged();
-                    chatUser.removeFromReadList(ids);
+                    chatUser.emptyReadList();
                 }
             });
         }
     }
 
     public void showMessage(ChatMessage message) {
-        if (adapter != null) {
-            if (!messageList.contains(message)) {
-                messageList.add(message);
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        adapter.notifyDataSetChanged();
-                        scrollDown();
-                    }
-                });
-            }
-        } else {
+        if (adapter==null) {
+            adapter = new ChatAdapter(this,messageList);
+        }
+        if (!idList.contains(message.getId())) {
             messageList.add(message);
-            if (adapter!=null) adapter.notifyDataSetChanged();
+            idList.add(message.getId());
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    adapter.notifyDataSetChanged();
+                    scrollDown();
+                }
+            });
         }
     }
 
@@ -688,6 +733,7 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
         if (!messageList.contains(infoMessage)) {
             Log.v(TAG, "showInfoMessage !messageList.contains(infoMessage) ");
             messageList.add(0,infoMessage);
+            idList.add(infoMessage.getId());
             if (adapter==null) {
                 Log.v(TAG, "showInfoMessage adding to adapter ");
                 adapter = new ChatAdapter(this, messageList);
@@ -697,27 +743,6 @@ public class ChatActivity extends BaseChatActivity implements ApplicationSession
             adapter.notifyDataSetChanged();
         }
     }
-
-    // handler for received Intents for the "new messages" event
-    private BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            // Extract data included in the Intent
-            int count = intent.getIntExtra(ChatService.COUNT, 0);
-            Log.d("chat-receiver", "Got number of messages: " + count);
-            ArrayList<ChatMessage> messages = chatUser.getUnread();
-            if (messages != null) {
-                if (finishedLoading) {
-                    showMessages(messages, false);
-                } else {
-                    Log.d("chat-receiver", "not finished loading");
-                }
-            } else {
-                Log.d("chat-receiver", "messages are null");
-            }
-        }
-    };
-
 
     private void scrollDown() {
         messagesContainer.setSelection(messagesContainer.getCount() - 1);

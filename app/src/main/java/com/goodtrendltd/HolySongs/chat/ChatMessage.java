@@ -20,7 +20,6 @@ public class ChatMessage {
     private String body;
     private boolean readFlag;
     private boolean saveToHistory = false;
-    private boolean markable;
     private String direction;
     private boolean sendingInProgress = false;
 
@@ -36,11 +35,8 @@ public class ChatMessage {
     public void setBody(String body) {
         this.body = body;
     }
-    public boolean isMarkable() {
-        return this.markable;
-    }
-    public void setMarkable(boolean markable) { this.markable = markable; }
     public void setReadFlag(Boolean flag) { this.readFlag=flag; }
+    public Boolean isRead() {return this.readFlag; }
     public void setDirection(String direction) { this.direction = direction; }
     public void setDate(Date date) {
         //Date is stored as date object

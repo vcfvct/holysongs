@@ -12,12 +12,28 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
@@ -36,20 +52,52 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_full_open_on_phone.png",
-        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.3.0/res/drawable-xhdpi/common_full_open_on_phone.png"
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_ic_googleplayservices.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_ic_googleplayservices.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_focused.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/video_icon.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-xhdpi/video_icon.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
@@ -62,6 +110,18 @@
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_black_36dp.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
@@ -84,12 +144,48 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/pic_church.jpeg",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/src/main/res/drawable-xhdpi/pic_church.jpeg"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_focused.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_light_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_015.png",
@@ -104,12 +200,16 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_warning_error.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_video_library.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_video_library.png"
     },
     {
-        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_home_church.png",
@@ -136,6 +236,10 @@
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
     },
@@ -146,6 +250,30 @@
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_star_black_48dp.png",
@@ -190,6 +318,10 @@
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png",
         "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/res/drawable-xhdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "/Users/juliaevelyn/Documents/Android/holysongs-android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png",

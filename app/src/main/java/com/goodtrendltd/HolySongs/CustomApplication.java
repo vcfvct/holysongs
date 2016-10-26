@@ -15,7 +15,6 @@ import com.goodtrendltd.HolySongs.entities.ChatThreadScheduler;
 import com.goodtrendltd.HolySongs.helpers.CommonMethod;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
-
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 public class CustomApplication extends Application
@@ -53,10 +52,11 @@ public class CustomApplication extends Application
         if (tracker == null) {
             GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
             // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
-            tracker = analytics.newTracker("UA-66336761-1");
+            tracker = analytics.newTracker(R.xml.global_tracker);
         }
         return tracker;
     }
+
     public void scheduleMessageRetrieve() {
 
         ChatService.initIfNeed(this);
