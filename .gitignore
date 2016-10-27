@@ -1,5 +1,5 @@
-app/build/generated/source/r/debug/com/google/android/gms/R.java
-app/build/generated/source/r/debug/com/google/android/gms/analytics/R.java
+.gradle/2.10/tasks/**
+app/build/generated/**
 app/build/intermediates/**
 build/**
 .idea/misc.xml
