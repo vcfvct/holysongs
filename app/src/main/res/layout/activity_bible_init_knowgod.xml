@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal">
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_one"
+                android:text="@string/gospel_kown_jesus"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txt_two"
+                android:text="@string/gospel_two"
+                android:textSize="20dp"
+                android:gravity="start"
+                android:layout_width="fill_parent"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_three"
+                android:text="@string/gospel_three"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_four"
+                android:text="@string/gospel_four"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_five"
+                android:text="@string/gospel_five"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_six"
+                android:text="@string/gospel_six"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_seven"
+                android:text="@string/gospel_seven"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_eight"
+                android:text="@string/gospel_eight"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:text="@string/gospel_btn_yes"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/style_button_fillet_green"
+        />
+
+        <Button
+            android:id="@+id/btn_read_bible"
+            android:layout_marginLeft="20dp"
+            android:text="@string/done"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/style_button_fillet_green"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

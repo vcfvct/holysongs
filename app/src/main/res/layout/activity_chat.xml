@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chat_tb_first"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:height="200dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_des"
+            android:text="信仰答疑"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="13"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/sizeNotifierLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_light_background">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/messageEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/chatSendButton"
+                android:autoText="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/theme_light_grey"
+                android:hint="message text"/>
+
+            <Button
+                android:id="@+id/chatSendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/messageEdit"
+                android:layout_alignBottom="@id/messageEdit"
+                android:layout_alignParentRight="true"
+                style="@style/button_theme_green"
+                android:text="@string/send"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_above="@+id/messageEdit"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:divider="@null" >
+
+                <ListView
+                    android:id="@+id/messagesContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@null"
+                    android:cacheColorHint="@android:color/transparent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:id="@+id/error_view"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_above="@id/messageEdit"
+                android:background="@color/theme_light_background">
+                <ImageView
+                    android:src="@drawable/ic_warning_error"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="网络访问失败"
+                    android:textColor="#4F4D70"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

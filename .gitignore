@@ -1,0 +1,7 @@
+.gradle/2.10/tasks/**
+app/build/generated/**
+app/build/intermediates/**
+build/**
+.idea/misc.xml
+.idea/workspace.xml
+.idea/libraries/pinyin4j_2_5_0.xml

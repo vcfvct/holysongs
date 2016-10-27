@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:padding="5dip"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/introduction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_prompt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/name_prompt"
+        android:ems="10"
+        android:theme="@style/Widget.AppCompat.EditText"
+        android:textColor="@color/theme_dark_grey"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/introduction_title"  />
+
+    <RadioGroup
+        android:id="@+id/buttons_select_decision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/nameTextView"
+        android:gravity="center">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_christian"
+            android:id="@+id/radioButton1"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp"
+            android:checked="false"
+            android:buttonTint="@color/theme_light_grey"
+            android:textColor="@color/theme_dark_grey" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommitted"
+            android:id="@+id/radioButton2"
+            android:layout_gravity="start"
+            android:layout_marginBottom="2dp"
+            android:buttonTint="@color/theme_light_grey"
+            android:textColor="@color/theme_dark_grey" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/christian_grow"
+            android:id="@+id/radioButton3"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="start"
+            android:buttonTint="@color/theme_light_grey"
+            android:textColor="@color/theme_dark_grey" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="120dip"
+        android:layout_below="@id/buttons_select_decision"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        style="@style/button_theme_green" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">敬拜赞美诗</string>
+    <string name="about">关于App</string>
+    <string name="settings_text">设置</string>
+    <string name="sharing_app_text">分享此app给好友</string>
+    <string name="sharing_lyric_text">分享歌词</string>
+    <string name="app_pref">appPrefFile</string>
+
+    <string name="font_size_prompt">选择字体大小 当前为: </string>
+    <string name="font_size_pref_key">fontSize</string>
+    <string name="font_size_resume_default">恢复默认</string>
+
+    <string name="night_mode_label_text">夜间模式(黑色背景)</string>
+    <string name="night_mode_pref_key">nightMode</string>
+
+    <string name="youtube_menu">youtube搜索</string>
+    <string name="youku_menu">优酷搜索</string>
+    <string name="tudou_menu">土豆搜索</string>
+    <string name="youtube">youtube</string>
+    <string name="youku">youku</string>
+    <string name="tudou">tudou</string>
+    <string name="youtube_url">http://m.youtube.com/results?q=</string>
+    <string name="youku_url">http://www.soku.com/m/y/video?q=</string>
+    <string name="tudou_url">http://www.soku.com/m/t/video?q=</string>
+    <string name="alert_title">没有连接wifi</string>
+    <string name="alert_message">将使用手机流量，是否继续？</string>
+    <string name="ok_button">继续</string>
+    <string name="cancel_button">取消</string>
+    <string name="loading_video">努力加载中…</string>
+
+    <string name="app_url_android">http://play.google.com/store/apps/details?id=com.goodtrendltd.HolySongs</string>
+    <string name="app_url_ios">https://itunes.apple.com/us/app/jing-bai-zan-mei-shi/id729679789?mt=8&amp;uo=4</string>
+
+    <string-array name="font_size_array">
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+        <item>22</item>
+        <item>24</item>
+        <item>26</item>
+        <item>28</item>
+        <item>30</item>
+    </string-array>
+
+    <style name="MyHoloTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="MyHoloLightTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/video_icon</item>
+    </style>
+
+
+    <!-- Chat -->
+    <string name="chat_title">Chat with a Mentor</string>
+    <string name="chat_activity_title">How can we help?</string>
+    <string name="chat_need_prayer">Need Prayer?</string>
+    <string name="find_church_text">Find a Church</string>
+    <string name="find_church_subtext">Contact Us</string>
+    <string name="chat_now">Chat Now</string>
+    <string name="chat_welcome_message">How can I pray for you?</string>
+    <string name="chat_welcome_message_church">Thanks!  We\'ll see if we can find a church in your area, and get in touch with you soon. In the meantime, how can I pray for you?</string>
+    <string name="chat_notification_title">New Message</string>
+    <string name="chat_public_notification">You have received a new message</string>
+    <string name="info_prompt">What\'s your name?</string>
+    <string name="name_prompt">First name</string>
+    <string name="decision_error">Please choose a decision</string>
+    <string name="seeker">I am not a Christian and still have questions</string>
+    <string name="new_christian">I just prayed to receive Christ</string>
+    <string name="recommitted">I recommitted my life to Christ</string>
+    <string name="christian_evangelical">I am a follower of Jesus and I want to share Him with others</string>
+    <string name="christian_grow">I am a Christian and want to grow in my faith</string>
+    <string name="undecided">No Decision - Needs Gospel Presentation</string>
+    <string name="submit">Submit</string>
+    <string name="me">Me</string>
+    <string name="mentor">Mentor</string>
+    <string name="send">Send</string>
+    <string name="network_failure">Network Error</string>
+    <string name="network_failure_auto">Unable to connect to the network, the player failed.</string>
+    <string name="registering">Registering...</string>
+
+    <string name="name_prompt_error">Please provide a name</string>
+    <string name="error_phone">Please provide a mobile phone number.</string>
+    <string name="error_address">Please provide the address.</string>
+
+    <string name="skip">Skip</string>
+    <string name="done">done</string>
+
+    <string name="gospel_kown_jesus">Know Jesus</string>
+    <string name="gospel_two">\t\tGod loves you! The Bible says: "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life."</string>
+    <string name="gospel_three">\t\tThe problem is…</string>
+    <string name="gospel_four">\t\tEveryone has sinned (such as lying, stealing, etc …) and that sin separates us from God, God is perfect and holy, and our sins separate us forever from Him. The Bible says: "The wages of sin is death."</string>
+    <string name="gospel_five">\t\tBut the good news is... </string>
+    <string name="gospel_six">\t\tAbout 2,000 years ago, God sent his only son Jesus to the world. He lived a sinless life, died to pay for our sins on the cross, and then He rose from the dead. If you accept Him as Lord of your life, your sin will be forgiven. He will come into your life and give you peace and everlasting life.</string>
+    <string name="gospel_seven">\t\tIf you are willing to accept Christ and turn from sin, you can pray:</string>
+    <string name="gospel_eight">\t\t\"Jesus, I believe you are God\'s son. Thank you for dying on the cross in my place, to take away my sin. Please forgive me for what I\'ve done wrong. I want to follow you and make you the leader of my whole life, forever. Amen.\" Below, you can press \"Yes\" to ask us questions about your faith.</string>
+    <string name="gospel_btn_yes">Yes</string>
+    <string name="gospel_read_bible">Start Reading</string>
+    <string name="chat_form_submit_address" translatable="false">Address</string>
+    <string name="chat_form_submit_button">Submit</string>
+    <string name="chat_form_submit_msg_01">Thank you!  We will do our best to find a church in your area.</string>
+    <string name="chat_form_submit_msg_02">Please provide your contact info:</string>
+    <string name="chat_form_submit_name">Name:</string>
+    <string name="chat_form_submit_phone">Phone:</string>
+    <string name="chat_form_title">Don\'t giving up meeting together, as some are in the habit of doing, but encouraging one another—and all the more as you see the Day approaching.</string>
+    <string name="chat_form_title_version">Hebrews 10:25</string>
+</resources>

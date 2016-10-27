@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.goodtrendltd.HolySongs"
+        minSdkVersion 14
+        targetSdkVersion 24
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.google.android.gms:play-services-analytics:9.2.0'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/quickblox-android-sdk-core-2.2.6.jar')
+    compile files('libs/quickblox-android-sdk-messages-2.2.6.jar')
+    compile files('libs/quickblox-android-sdk-chat-2.2.6.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'
