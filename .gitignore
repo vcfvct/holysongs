@@ -25,3 +25,6 @@ app/build/intermediates/blame/res/debug/multi/values-eu-rES.json
 app/build/intermediates/blame/res/debug/multi/values-fa.json
 app/build/intermediates/blame/res/debug/multi/values-fi.json
 app/build/intermediates/blame/res/debug/multi/values-fr-rCA.json
+.idea/misc.xml
+.idea/workspace.xml
+.idea/libraries/pinyin4j_2_5_0.xml
